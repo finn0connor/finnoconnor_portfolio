@@ -12,14 +12,14 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const [expandedPdfIndex, setExpandedPdfIndex] = useState<number | null>(null);
 
   return (
-    <article className="card-elevated overflow-hidden">
+    <article className="card-elevated overflow-hidden group hover:border-accent/50">
       {/* Card Header */}
-      <div className="p-6">
+      <div className="p-6 bg-gradient-to-br from-background to-secondary/5">
         <div className="flex items-start justify-between gap-4 mb-3">
-          <h3 className="font-serif text-xl font-semibold text-primary leading-tight">
+          <h3 className="font-heading text-xl font-bold text-primary leading-tight group-hover:text-accent transition-colors">
             {project.title}
           </h3>
-          <span className="tag-accent shrink-0 text-xs">
+          <span className="tag-accent shrink-0 text-xs font-semibold">
             {project.discipline}
           </span>
         </div>
@@ -27,7 +27,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         {/* Tags */}
         <div className="flex flex-wrap gap-2 mb-4">
           {project.tags.map((tag) => (
-            <span key={tag} className="tag text-xs">
+            <span key={tag} className="tag text-xs font-medium">
               {tag}
             </span>
           ))}
@@ -39,7 +39,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </p>
 
         {/* Outcome */}
-        <div className="bg-secondary/50 rounded p-3 mb-4">
+        <div className="bg-gradient-to-r from-accent/10 to-secondary/10 rounded-lg p-4 mb-4 border border-accent/20">
           <p className="text-sm">
             <span className="font-semibold text-foreground">Outcome: </span>
             <span className="text-muted-foreground">{project.outcome}</span>
@@ -53,10 +53,10 @@ export function ProjectCard({ project }: ProjectCardProps) {
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className={cn(
-                  "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
+                  "inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200",
                   isExpanded
-                    ? "bg-accent text-accent-foreground"
-                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                    ? "bg-gradient-to-r from-accent to-secondary text-accent-foreground shadow-lg"
+                    : "bg-gradient-to-r from-secondary/20 to-accent/10 text-secondary hover:from-secondary/30 hover:to-accent/20 border border-secondary/30"
                 )}
               >
                 <FileText size={16} />
@@ -66,7 +66,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
               <a
                 href={project.pdfUrl}
                 download
-                className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+                className="inline-flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold bg-gradient-to-r from-secondary/20 to-accent/10 text-secondary hover:from-secondary/30 hover:to-accent/20 transition-all border border-secondary/30 hover:shadow-md"
               >
                 <Download size={16} />
                 Download Report
@@ -76,8 +76,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
           {project.pdfs && project.pdfs.map((pdf, index) => (
             <div key={index} className="w-full mt-4">
-              <div className="border-t border-border pt-4">
-                <h4 className="font-semibold text-foreground mb-2">{pdf.label}</h4>
+              <div className="border-t border-accent/20 pt-4">
+                <h4 className="font-heading font-semibold text-foreground mb-2">{pdf.label}</h4>
                 {pdf.description && (
                   <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{pdf.description}</p>
                 )}

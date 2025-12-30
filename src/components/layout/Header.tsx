@@ -16,13 +16,13 @@ export function Header() {
   const location = useLocation();
 
   return (
-    <header className="sticky top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="sticky top-0 z-50 bg-gradient-to-r from-background to-secondary/5 backdrop-blur-md border-b border-accent/20 shadow-sm">
       <div className="section-container">
         <nav className="flex items-center justify-between h-16 md:h-20">
           {/* Logo / Name */}
           <Link 
             to="/" 
-            className="font-serif text-xl md:text-2xl font-semibold text-primary hover:text-accent transition-colors"
+            className="font-heading text-2xl md:text-3xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent hover:from-accent hover:to-primary transition-all"
           >
             Finn O'Connor
           </Link>
@@ -34,7 +34,7 @@ export function Header() {
                 <Link
                   to={link.href}
                   className={cn(
-                    "font-medium text-sm uppercase tracking-wide transition-colors link-underline",
+                    "font-semibold text-sm uppercase tracking-wider transition-all duration-200 link-underline",
                     location.pathname === link.href
                       ? "text-accent"
                       : "text-muted-foreground hover:text-foreground"
@@ -48,7 +48,7 @@ export function Header() {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden p-2 text-foreground"
+            className="md:hidden p-2 text-foreground hover:text-accent transition-colors"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             aria-label="Toggle menu"
           >
@@ -58,7 +58,7 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div className="md:hidden py-4 border-t border-border animate-fade-in">
+          <div className="md:hidden py-4 border-t border-accent/20 bg-gradient-to-b from-transparent to-accent/5 animate-fade-in">
             <ul className="flex flex-col gap-4">
               {navLinks.map((link) => (
                 <li key={link.href}>
@@ -66,7 +66,7 @@ export function Header() {
                     to={link.href}
                     onClick={() => setIsMenuOpen(false)}
                     className={cn(
-                      "block py-2 font-medium text-sm uppercase tracking-wide transition-colors",
+                      "block py-2 font-semibold text-sm uppercase tracking-wider transition-colors",
                       location.pathname === link.href
                         ? "text-accent"
                         : "text-muted-foreground hover:text-foreground"
