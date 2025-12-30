@@ -15,7 +15,7 @@ export default function Home() {
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-              Welcome
+              Welcome!
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed">
               Hi, my name is Finn
