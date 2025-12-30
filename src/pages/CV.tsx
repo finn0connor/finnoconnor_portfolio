@@ -35,18 +35,18 @@ export default function CV() {
             {/* Header / Contact */}
             <div className="bg-card rounded-lg p-8 border border-border mb-8">
               <h2 className="font-serif text-3xl font-bold text-primary mb-2">Finn O'Connor</h2>
-              <p className="text-lg text-accent mb-6">Mechanical & Manufacturing Engineer</p>
+              <p className="text-lg text-accent mb-6">MAI (MEng) Mechanical & Manufacturing Engineering</p>
               
               <div className="grid sm:grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Mail size={16} />
-                  <a href="mailto:finn@example.com" className="hover:text-accent transition-colors">
-                    finn@example.com
+                  <a href="mailto:foconno1@tcd.ie" className="hover:text-accent transition-colors">
+                    foconno1@tcd.ie
                   </a>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Phone size={16} />
-                  <span>+353 XX XXX XXXX</span>
+                  <span>+353 87 463 4990</span>
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <MapPin size={16} />
@@ -54,8 +54,8 @@ export default function CV() {
                 </div>
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <ExternalLink size={16} />
-                  <a href="https://linkedin.com/in/finnoconnor" className="hover:text-accent transition-colors">
-                    linkedin.com/in/finnoconnor
+                  <a href="https://www.linkedin.com/in/finn-oconnor/" className="hover:text-accent transition-colors">
+                    linkedin.com/in/finn-oconnor
                   </a>
                 </div>
               </div>
@@ -67,7 +67,7 @@ export default function CV() {
                 <span className="w-8 h-8 bg-accent/10 rounded flex items-center justify-center">
                   <Briefcase size={16} className="text-accent" />
                 </span>
-                Professional Summary
+                Objective
               </h3>
               <p className="text-muted-foreground leading-relaxed pl-10">
                 [Add a 2-3 sentence professional summary highlighting your key strengths, 
@@ -87,32 +87,32 @@ export default function CV() {
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
                     <h4 className="font-semibold text-foreground">
-                      Masters in Mechanical & Manufacturing Engineering
+                      Master of Engineering - MAI (MEng), Mechanical & Manufacturing Engineering
                     </h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
-                      2023 – Present
+                      2022 – 2027
                     </span>
                   </div>
-                  <p className="text-accent text-sm mb-2">Trinity College Dublin</p>
+                  <p className="text-accent text-sm mb-2">Trinity College Dublin, The University of Dublin</p>
                   <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
                     <li>Thesis: [Your thesis topic]</li>
                     <li>Relevant coursework: [Key modules]</li>
-                    <li>GPA: [If applicable]</li>
+                    <li>Grade: First Class Honours (1.1)</li>
                   </ul>
                 </div>
 
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
                     <h4 className="font-semibold text-foreground">
-                      Bachelor's Degree in [Field]
+                      Bachelor of Engineering - BEng (Hons), Mechanical & Manufacturing Engineering
                     </h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
                       [Years]
                     </span>
                   </div>
-                  <p className="text-accent text-sm mb-2">[University Name]</p>
+                  <p className="text-accent text-sm mb-2">Trinity College Dublin, The University of Dublin</p>
                   <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
                     <li>[Key achievement or focus area]</li>
                   </ul>
