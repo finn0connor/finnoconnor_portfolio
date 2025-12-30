@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp, ExternalLink, Github, FileText } from "lucide-react";
+import { ChevronDown, ChevronUp, ExternalLink, Github, FileText, Download } from "lucide-react";
 import { Project } from "@/data/projects";
 import { cn } from "@/lib/utils";
 
@@ -48,19 +48,29 @@ export function ProjectCard({ project }: ProjectCardProps) {
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-3">
           {project.pdfUrl && (
-            <button
-              onClick={() => setIsExpanded(!isExpanded)}
-              className={cn(
-                "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
-                isExpanded
-                  ? "bg-accent text-accent-foreground"
-                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
-              )}
-            >
-              <FileText size={16} />
-              {isExpanded ? "Hide Report" : "View Report"}
-              {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-            </button>
+            <>
+              <button
+                onClick={() => setIsExpanded(!isExpanded)}
+                className={cn(
+                  "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
+                  isExpanded
+                    ? "bg-accent text-accent-foreground"
+                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                )}
+              >
+                <FileText size={16} />
+                {isExpanded ? "Hide Report" : "View Report"}
+                {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+              </button>
+              <a
+                href={project.pdfUrl}
+                download
+                className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+              >
+                <Download size={16} />
+                Download Report
+              </a>
+            </>
           )}
 
           {project.codeUrl && (
@@ -95,7 +105,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <div className="p-4 bg-muted/30">
             <div className="aspect-[8.5/11] w-full max-h-[80vh] bg-background rounded border border-border overflow-hidden">
               <iframe
-                src={`${project.pdfUrl}#toolbar=0`}
+                src={project.pdfUrl}
                 className="w-full h-full"
                 title={`${project.title} - PDF Report`}
                 style={{ border: 'none' }}
