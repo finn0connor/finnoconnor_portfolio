@@ -104,6 +104,23 @@ export function ProjectCard({ project }: ProjectCardProps) {
                     Download
                   </a>
                 </div>
+                
+                {/* PDF Viewer for this specific document */}
+                {expandedPdfIndex === index && (
+                  <div className="mt-4 border-t border-border pt-4 animate-accordion-down">
+                    <div className="aspect-[8.5/11] w-full max-h-[80vh] bg-background rounded border border-border overflow-hidden">
+                      <iframe
+                        src={pdf.url}
+                        className="w-full h-full"
+                        title={`${project.title} - ${pdf.label}`}
+                        style={{ border: 'none' }}
+                      />
+                    </div>
+                    <p className="text-xs text-muted-foreground mt-2 text-center">
+                      Having trouble viewing? <a href={pdf.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Open in new tab</a>
+                    </p>
+                  </div>
+                )}
               </div>
             </div>
           ))}
@@ -148,25 +165,6 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </div>
             <p className="text-xs text-muted-foreground mt-2 text-center">
               Having trouble viewing? <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Open in new tab</a>
-            </p>
-          </div>
-        </div>
-      )}
-
-      {/* Multiple PDFs Viewer */}
-      {project.pdfs && expandedPdfIndex !== null && project.pdfs[expandedPdfIndex] && (
-        <div className="border-t border-border animate-accordion-down">
-          <div className="p-4 bg-muted/30">
-            <div className="aspect-[8.5/11] w-full max-h-[80vh] bg-background rounded border border-border overflow-hidden">
-              <iframe
-                src={project.pdfs[expandedPdfIndex].url}
-                className="w-full h-full"
-                title={`${project.title} - ${project.pdfs[expandedPdfIndex].label}`}
-                style={{ border: 'none' }}
-              />
-            </div>
-            <p className="text-xs text-muted-foreground mt-2 text-center">
-              Having trouble viewing? <a href={project.pdfs[expandedPdfIndex].url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Open in new tab</a>
             </p>
           </div>
         </div>
