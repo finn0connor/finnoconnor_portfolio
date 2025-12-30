@@ -13,11 +13,11 @@ export default function CV() {
                 Curriculum Vitae
               </h1>
               <p className="text-muted-foreground">
-                Last updated: December 2024
+                Last updated: December 2025
               </p>
             </div>
             <a
-              href="/cv/Finn_OConnor_CV.pdf"
+              href="/finnoconnor_portfolio/cv/Finn_OConnor_CV.pdf"
               download
               className="btn-primary inline-flex items-center gap-2 self-start"
             >
@@ -70,8 +70,9 @@ export default function CV() {
                 Objective
               </h3>
               <p className="text-muted-foreground leading-relaxed pl-10">
-                [Add a 2-3 sentence professional summary highlighting your key strengths, 
-                experience, and what you're looking for. Make it compelling and specific to your target roles.]
+                Master of Mechanical Engineering student with strong technical foundations in CAD, simulation, and programming. 
+                Seeking opportunities to apply engineering expertise in mechanical design, analysis, and manufacturing optimization. 
+                Demonstrated experience in aerospace design, thermal systems, and interdisciplinary engineering problem-solving.
               </p>
             </div>
 
@@ -91,30 +92,13 @@ export default function CV() {
                     </h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
-                      2022 – 2027
+                      Sept 2022 – May 2027
                     </span>
                   </div>
                   <p className="text-accent text-sm mb-2">Trinity College Dublin, The University of Dublin</p>
                   <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                    <li>Thesis: [Your thesis topic]</li>
-                    <li>Relevant coursework: [Key modules]</li>
-                    <li>Grade: First Class Honours (1.1)</li>
-                  </ul>
-                </div>
-
-                <div>
-                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                    <h4 className="font-semibold text-foreground">
-                      Bachelor of Engineering - BEng (Hons), Mechanical & Manufacturing Engineering
-                    </h4>
-                    <span className="text-sm text-muted-foreground flex items-center gap-1">
-                      <Calendar size={14} />
-                      [Years]
-                    </span>
-                  </div>
-                  <p className="text-accent text-sm mb-2">Trinity College Dublin, The University of Dublin</p>
-                  <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                    <li>[Key achievement or focus area]</li>
+                    <li>Relevant Coursework: Engineering Mathematics, Probability & Statistics, Computational Science, Materials Science, Fluid Mechanics, Thermodynamics, Heat Transfer, Signals and Systems, Multibody Dynamics, Mechanics of Solids, Research Methods</li>
+                    <li>Activities: Trinity Student Managed Fund, Formula Trinity, DUFC (Trinity Rugby), EngSoc</li>
                   </ul>
                 </div>
               </div>
@@ -131,32 +115,59 @@ export default function CV() {
               <div className="pl-10 space-y-6">
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                    <h4 className="font-semibold text-foreground">[Job Title]</h4>
+                    <h4 className="font-semibold text-foreground">Mechanical Engineering Intern</h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
-                      [Date Range]
+                      May 2025 – Aug 2025
                     </span>
                   </div>
-                  <p className="text-accent text-sm mb-2">[Company Name] — [Location]</p>
+                  <p className="text-accent text-sm mb-2">Kirby Group Engineering — Dublin, Ireland</p>
                   <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                    <li>[Achievement or responsibility with quantified impact]</li>
-                    <li>[Another achievement or responsibility]</li>
-                    <li>[Another achievement or responsibility]</li>
+                    <li>Contributed to the development of AstraZeneca Alexion's new pharmaceutical manufacturing facility</li>
+                    <li>Prepared and revised pipe network designs, produced redlines, isometrics, and P&IDs for client submission</li>
+                    <li>Applied knowledge in fluid mechanics, thermodynamics, and CAD; built skills in Excel, Revit, and BlueBeam</li>
                   </ul>
                 </div>
 
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                    <h4 className="font-semibold text-foreground">[Previous Job Title]</h4>
+                    <h4 className="font-semibold text-foreground">Drivetrain Engineer</h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
-                      [Date Range]
+                      Oct 2024 – Present
                     </span>
                   </div>
-                  <p className="text-accent text-sm mb-2">[Company Name] — [Location]</p>
+                  <p className="text-accent text-sm mb-2">Formula Trinity — Dublin, Ireland</p>
                   <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                    <li>[Achievement or responsibility]</li>
-                    <li>[Achievement or responsibility]</li>
+                    <li>Designed and simulated drivetrain components using SolidWorks and ANSYS for Trinity's Formula Student team</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                    <h4 className="font-semibold text-foreground">Quantitative Trader & Analyst</h4>
+                    <span className="text-sm text-muted-foreground flex items-center gap-1">
+                      <Calendar size={14} />
+                      Feb 2023 – Present
+                    </span>
+                  </div>
+                  <p className="text-accent text-sm mb-2">Trinity Student Managed Fund — Dublin, Ireland</p>
+                  <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                    <li>Helped design systematic trading strategies in Python & MATLAB, backtested with market APIs</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                    <h4 className="font-semibold text-foreground">Spring Insight Participant</h4>
+                    <span className="text-sm text-muted-foreground flex items-center gap-1">
+                      <Calendar size={14} />
+                      Feb 2024
+                    </span>
+                  </div>
+                  <p className="text-accent text-sm mb-2">Susquehanna International Group (SIG) — Dublin, Ireland</p>
+                  <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                    <li>Gained exposure to proprietary trading, options market making, and SIG's probabilistic decision-making methods</li>
                   </ul>
                 </div>
               </div>
@@ -168,31 +179,43 @@ export default function CV() {
                 <span className="w-8 h-8 bg-accent/10 rounded flex items-center justify-center">
                   <Award size={16} className="text-accent" />
                 </span>
-                Technical Skills
+                Technical Skills & Platforms
               </h3>
-              <div className="pl-10 grid sm:grid-cols-2 gap-4">
+              <div className="pl-10 grid sm:grid-cols-2 gap-6">
                 <div>
                   <h4 className="font-medium text-foreground mb-2 text-sm">CAD & Design</h4>
                   <p className="text-sm text-muted-foreground">
-                    SolidWorks, Fusion 360, AutoCAD, CATIA
+                    SolidWorks, Fusion 360, AutoCAD, Revit
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground mb-2 text-sm">Analysis & Simulation</h4>
+                  <h4 className="font-medium text-foreground mb-2 text-sm">Simulation & Analysis</h4>
                   <p className="text-sm text-muted-foreground">
-                    ANSYS, Abaqus, LS-DYNA, MATLAB
+                    ANSYS, CFD, FEA, MATLAB, MADYMO
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground mb-2 text-sm">Programming</h4>
+                  <h4 className="font-medium text-foreground mb-2 text-sm">Programming & Data</h4>
                   <p className="text-sm text-muted-foreground">
-                    Python, JavaScript, TypeScript, SQL
+                    Python, C++, MATLAB, Excel, Arduino
                   </p>
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground mb-2 text-sm">Manufacturing</h4>
                   <p className="text-sm text-muted-foreground">
-                    CNC, 3D Printing, Injection Molding, GD&T
+                    CNC, 3D Printing, GD&T, BlueBeam
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-medium text-foreground mb-2 text-sm">Core Competencies</h4>
+                  <p className="text-sm text-muted-foreground">
+                    CAD, CFD, FEA, Data Analysis, Advanced Mathematics, Teamwork, Communication
+                  </p>
+                </div>
+                <div>
+                  <h4 className="font-medium text-foreground mb-2 text-sm">Certifications</h4>
+                  <p className="text-sm text-muted-foreground">
+                    Certified SolidWorks Associate, Bloomberg Market Concepts, MATLAB Onramp
                   </p>
                 </div>
               </div>
@@ -204,19 +227,37 @@ export default function CV() {
                 <span className="w-8 h-8 bg-accent/10 rounded flex items-center justify-center">
                   <Briefcase size={16} className="text-accent" />
                 </span>
-                Key Projects
+                Key Projects & Achievements
               </h3>
               <div className="pl-10">
                 <p className="text-sm text-muted-foreground mb-4">
                   See the <a href="/projects" className="text-accent hover:underline">Projects page</a> for 
-                  detailed documentation of all engineering projects.
+                  detailed documentation of all engineering projects, including CAD designs, simulations, and analysis work.
                 </p>
-                <ul className="text-sm text-muted-foreground space-y-2 list-disc list-inside">
-                  <li><span className="text-foreground font-medium">Automated Assembly Line Design</span> — Reduced assembly time by 40%</li>
-                  <li><span className="text-foreground font-medium">CNC Optimization Tool</span> — 25% reduction in machining cycle time</li>
-                  <li><span className="text-foreground font-medium">Thermal Analysis of Heat Exchanger</span> — 15% improved thermal efficiency</li>
-                </ul>
+                <div className="space-y-3">
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-2"><span className="text-foreground font-medium">Academic Projects:</span> Autonomous Driving Buggy, Arduino-Based Cyclist Protection System, F1 Front Wing CFD Analysis, MATLAB Kinematic Pumpjack Simulation, Smartphone Chassis Design & FEA</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground mb-2"><span className="text-foreground font-medium">Research & Analysis:</span> Acoustic Liners for UAM Applications, Thermal Systems Analysis, Multibody Dynamics, Materials Selection</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground"><span className="text-foreground font-medium">Achievements & Leadership:</span> Castleknock College Deputy School Captain (2022), Valedictory Speech (2022), Bologna Marathon Finisher (2025), Trinity Rugby DUFC First XV, RIAM Grade 6 Pianist</p>
+                  </div>
+                </div>
               </div>
+            </div>
+
+            {/* PDF Viewer */}
+            <div className="bg-card rounded-lg border border-border overflow-hidden mb-8">
+              <div className="bg-secondary/10 p-4 border-b border-border">
+                <h3 className="font-semibold text-foreground">View Full CV</h3>
+              </div>
+              <iframe
+                src="/finnoconnor_portfolio/cv/Finn_OConnor_CV.pdf#toolbar=1&view=FitH"
+                className="w-full h-screen md:h-[800px]"
+                title="Finn O'Connor CV"
+              />
             </div>
 
             {/* Download CTA */}
@@ -225,7 +266,7 @@ export default function CV() {
                 Download the complete CV as a PDF for your records.
               </p>
               <a
-                href="/cv/Finn_OConnor_CV.pdf"
+                href="/finnoconnor_portfolio/cv/Finn_OConnor_CV.pdf"
                 download
                 className="btn-primary inline-flex items-center gap-2"
               >
