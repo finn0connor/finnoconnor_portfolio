@@ -9,6 +9,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [expandedPdfIndex, setExpandedPdfIndex] = useState<number | null>(null);
 
   return (
     <article className="card-elevated overflow-hidden">
@@ -73,6 +74,32 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </>
           )}
 
+          {project.pdfs && project.pdfs.map((pdf, index) => (
+            <div key={index} className="flex gap-2">
+              <button
+                onClick={() => setExpandedPdfIndex(expandedPdfIndex === index ? null : index)}
+                className={cn(
+                  "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
+                  expandedPdfIndex === index
+                    ? "bg-accent text-accent-foreground"
+                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                )}
+              >
+                <FileText size={16} />
+                {expandedPdfIndex === index ? `Hide ${pdf.label}` : `View ${pdf.label}`}
+                {expandedPdfIndex === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+              </button>
+              <a
+                href={pdf.url}
+                download
+                className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+              >
+                <Download size={16} />
+                Download {pdf.label}
+              </a>
+            </div>
+          ))}
+
           {project.codeUrl && (
             <a
               href={project.codeUrl}
@@ -113,6 +140,25 @@ export function ProjectCard({ project }: ProjectCardProps) {
             </div>
             <p className="text-xs text-muted-foreground mt-2 text-center">
               Having trouble viewing? <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Open in new tab</a>
+            </p>
+          </div>
+        </div>
+      )}
+
+      {/* Multiple PDFs Viewer */}
+      {project.pdfs && expandedPdfIndex !== null && project.pdfs[expandedPdfIndex] && (
+        <div className="border-t border-border animate-accordion-down">
+          <div className="p-4 bg-muted/30">
+            <div className="aspect-[8.5/11] w-full max-h-[80vh] bg-background rounded border border-border overflow-hidden">
+              <iframe
+                src={project.pdfs[expandedPdfIndex].url}
+                className="w-full h-full"
+                title={`${project.title} - ${project.pdfs[expandedPdfIndex].label}`}
+                style={{ border: 'none' }}
+              />
+            </div>
+            <p className="text-xs text-muted-foreground mt-2 text-center">
+              Having trouble viewing? <a href={project.pdfs[expandedPdfIndex].url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Open in new tab</a>
             </p>
           </div>
         </div>

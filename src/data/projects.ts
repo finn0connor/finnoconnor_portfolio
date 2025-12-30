@@ -8,6 +8,7 @@ export interface Project {
   description: string;
   outcome: string;
   pdfUrl?: string;
+  pdfs?: { label: string; url: string }[];
   codeUrl?: string;
   demoUrl?: string;
 }
@@ -16,6 +17,20 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
+    title: "Research Methods - Engineering Research Assignments",
+    discipline: "Engineering Analysis",
+    tags: ["Research", "Analysis", "Documentation", "Engineering Methods"],
+    description: "Comprehensive research methods coursework covering literature review, experimental design, data analysis, and technical reporting.",
+    outcome: "Completed four major research assignments demonstrating proficiency in engineering research methodologies and technical communication.",
+    pdfs: [
+      { label: "Assignment 1", url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_1.pdf" },
+      { label: "Assignment 2", url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_2.pdf" },
+      { label: "Assignment 3", url: "/finnoconnor_portfolio/projects/4E3-Research-Methods-Assignment3-Group17.pdf" },
+      { label: "Assignment 4", url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_4.pdf" }
+    ],
+  },
+  {
+    id: "2",
     title: "FEA and Design of a High-Performance Smartphone Chassis",
     discipline: "CAD & Design",
     tags: ["SolidWorks", "Computer Aided Design (CAD)", "Finite Element Analysis (FEA)", "Thermal Simulation", "Structural Simulation", "Mesh Refinement", "MATLAB", "Excel"],
@@ -24,7 +39,7 @@ export const projects: Project[] = [
     pdfUrl: "/finnoconnor_portfolio/projects/4B7_Assignment_2_Group_4_Report.pdf",
   },
   {
-    id: "2",
+    id: "3",
     title: "CNC Machining Optimization Tool",
     discipline: "Programming & Software",
     tags: ["Python", "G-Code", "Optimization"],
@@ -34,7 +49,7 @@ export const projects: Project[] = [
     codeUrl: "https://github.com/username/cnc-optimizer",
   },
   {
-    id: "3",
+    id: "4",
     title: "Thermal Analysis of Heat Exchanger",
     discipline: "Engineering Analysis",
     tags: ["ANSYS", "CFD", "Heat Transfer"],
@@ -43,51 +58,13 @@ export const projects: Project[] = [
     pdfUrl: "/finnoconnor_portfolio/projects/4B17_Final_Assignment_FinnOConnor.pdf",
   },
   {
-    id: "4",
+    id: "5",
     title: "Robotic Gripper Mechanism",
     discipline: "CAD & Design",
     tags: ["Fusion 360", "3D Printing", "Mechanisms"],
     description: "Designed an adaptive gripper mechanism capable of handling objects of varying geometries using compliant mechanisms.",
     outcome: "Successfully manufactured and tested prototype with 95% grip reliability.",
     pdfUrl: "/finnoconnor_portfolio/projects/4B7_Computer_Aided_Design__B4_Assignment_3.pdf",
-  },
-  {
-    id: "5",
-    title: "Production Scheduling System",
-    discipline: "Programming & Software",
-    tags: ["JavaScript", "React", "Algorithms"],
-    description: "Built a web-based production scheduling system using constraint satisfaction algorithms to optimize job shop scheduling.",
-    outcome: "Deployed system reduced scheduling conflicts by 60%.",
-    pdfUrl: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_1.pdf",
-    demoUrl: "https://demo.example.com",
-  },
-  {
-    id: "6",
-    title: "Structural FEA of Bicycle Frame",
-    discipline: "Engineering Analysis",
-    tags: ["Abaqus", "FEA", "Fatigue Analysis"],
-    description: "Performed finite element analysis on a custom bicycle frame design, including static loading and fatigue life prediction.",
-    outcome: "Validated design meets safety factor requirements with 20% weight reduction.",
-    pdfUrl: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_2.pdf",
-  },
-  {
-    id: "7",
-    title: "Pneumatic System Design",
-    discipline: "CAD & Design",
-    tags: ["AutoCAD", "P&ID", "Pneumatics"],
-    description: "Designed complete pneumatic circuit and component layout for an industrial automation system.",
-    outcome: "System commissioned successfully with zero air leaks.",
-    pdfUrl: "/finnoconnor_portfolio/projects/4E3-Research-Methods-Assignment3-Group17.pdf",
-  },
-  {
-    id: "8",
-    title: "Machine Learning for Quality Control",
-    discipline: "Programming & Software",
-    tags: ["Python", "TensorFlow", "Computer Vision"],
-    description: "Implemented a computer vision system using deep learning to detect manufacturing defects in real-time.",
-    outcome: "Achieved 98.5% defect detection accuracy on production line.",
-    pdfUrl: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_4.pdf",
-    codeUrl: "https://github.com/username/defect-detection",
   },
   {
     id: "9",
