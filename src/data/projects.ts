@@ -19,9 +19,9 @@ export const projects: Project[] = [
     id: "1",
     title: "Research Methods: Investigation into Acoustic Liners for UAM Applications",
     discipline: "Engineering Analysis",
-    tags: ["Research", "Acoustics", "UAM", "Additive Manufacturing", "Noise Reduction"],
-    description: "Comprehensive research investigation into acoustic liner technologies for Urban Air Mobility (UAM) applications, focusing on noise reduction solutions for next-generation aircraft.",
-    outcome: "Completed four major research milestones demonstrating advanced understanding of acoustic engineering principles and research methodology in emerging aviation technologies.",
+    tags: ["Research", "Acoustics Engineering", "Mathematical Modelling", "MATLAB", "SolidWorks", "Additive Manufacturing", "LaTeX"],
+    description: "Comprehensive research investigation into acoustic liner technologies for Urban Air Mobility (UAM) applications, focusing on noise reduction solutions for next-generation aircraft such as drones.",
+    outcome: "Conducted a literature review into acoustic liner technologies, proposed and presented an acoustic liner for testing, and presented findings comparing two designs in a conference paper format.",
     pdfs: [
       { 
         label: "Literature Review of Acoustic Liner Technologies", 
@@ -41,7 +41,7 @@ export const projects: Project[] = [
       { 
         label: "Conference Paper: Transmission-Loss Performance of Additively Manufactured Hybrid Acoustic Liners for UAM Applications", 
         url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_4.pdf",
-        description: "A formal conference paper presenting the findings from experimental testing of additively manufactured hybrid acoustic liners. The paper analyzes transmission-loss performance metrics and discusses the implications for noise reduction in Urban Air Mobility vehicles, contributing to the advancement of sustainable aviation technologies."
+        description: "A formal conference paper presenting the findings from experimental testing of additively manufactured hybrid acoustic liners. The paper analyses transmission-loss performance metrics and discusses the implications for noise reduction in UAM vehicles, contributing to the advancement of sustainable aviation technologies."
       }
     ],
   },
@@ -50,17 +50,17 @@ export const projects: Project[] = [
     title: "FEA and Design of a High-Performance Smartphone Chassis",
     discipline: "CAD & Design",
     tags: ["SolidWorks", "Computer Aided Design (CAD)", "Finite Element Analysis (FEA)", "Thermal Simulation", "Structural Simulation", "Mesh Refinement", "MATLAB", "Excel"],
-    description: "Designed a lightweight, premium smarphone chassis with high bending and torsional stiffness, and excellent thermal performance.",
-    outcome: "Designed a smartphone chassis that weighed 143.5 g, with a strength ratio of 4.7%, specific stiffness of 8.7 (N/mm)/g, and a max temp of 35.2 °C under peak CPU and battery operation conditions. This project was awarded 89%, which was the highest grade in the class.",
+    description: "Designed a lightweight, premium smartphone chassis using SolidWorks that had high bending and torsional stiffness, and excellent thermal performance.",
+    outcome: "The final design weighed 143.5 g, had a strength ratio of 4.7%, a specific stiffness of 8.7 (N/mm)/g, and a max temp of 35.2°C under peak CPU and battery loading conditions. This project was awarded 89%, which was the highest grade in the class.",
     pdfUrl: "/finnoconnor_portfolio/projects/4B7_Assignment_2_Group_4_Report.pdf",
   },
   {
     id: "3",
-    title: "High-Precision Aerospace Component Design",
+    title: "Optimisation of a Drone Frame Using CAD and FEA",
     discipline: "CAD & Design",
-    tags: ["SolidWorks", "CAD", "Engineering Drawing", "GD&T", "Design for Manufacturing"],
-    description: "Designed a complex aerospace component assembly with detailed engineering drawings, incorporating geometric dimensioning and tolerancing (GD&T) principles and design for manufacturing considerations.",
-    outcome: "Completed comprehensive CAD model and technical documentation demonstrating advanced proficiency in professional engineering design practices and industry-standard dimensioning techniques.",
+    tags: ["SolidWorks", "Computer Aided Design (CAD)", "Finite Element Analysis (FEA)", "Structural Simulation", "Thermal Simulation", "Toplogy Optimisation", "Mesh Refinement"],
+    description: "Designed and optimised a drone frame for wildfire detection using SolidWorks, focusing on achieving high strength-to-weight ratio and thermal performance through iterative design and finite element analysis.",
+    outcome: "The final drone frame design achieved a mass of 1202.5 g, which was a 34.6% reduction on the baseline value of 1838 g, a strength ratio of 2.2%, and had a maximum surface temp of 36.7°C and 86.7°C at ambient temperatures of 300 and 350 Kelvin respectively. The project demonstrated effective application of CAD and FEA techniques in lightweight structural design.",
     pdfUrl: "/finnoconnor_portfolio/projects/4B7_Computer_Aided_Design__B4_Assignment_3.pdf",
   },
   {
