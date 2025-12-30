@@ -16,12 +16,12 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Automated Assembly Line Design",
+    title: "FEA and Design of a High-Performance Smartphone Chassis",
     discipline: "CAD & Design",
-    tags: ["SolidWorks", "GD&T", "DFM"],
-    description: "Designed a fully automated assembly line for precision component manufacturing, including robotic arm integration and conveyor systems.",
-    outcome: "Reduced assembly time by 40% while maintaining quality standards.",
-    pdfUrl: "/projects/assembly-line.pdf",
+    tags: ["SolidWorks", "Computer Aided Design (CAD)", "Finite Element Analysis (FEA)", "Thermal Simulation", "Structural Simulation", "Mesh Refinement", "MATLAB", "Excel"],
+    description: "Designed a lightweight, premium smarphone chassis with high bending and torsional stiffness, and excellent thermal performance.",
+    outcome: "Designed a smartphone chassis that weighed 143.5 g, with a strength ratio of 4.7%, specific stiffness of 8.7 (N/mm)/g, and a max temp of 35.2 °C under peak CPU and battery operation conditions. This project was awarded 89%, which was the highest grade in the class.",
+    pdfUrl: "/projects/4B7_Assignment_2_Group_4_Report.pdf",
   },
   {
     id: "2",
