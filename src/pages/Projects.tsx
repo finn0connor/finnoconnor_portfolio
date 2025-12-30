@@ -46,13 +46,10 @@ export default function Projects() {
   return (
     <Layout>
       {/* Page Header */}
-      <section className="py-12 md:py-16 bg-gradient-to-br from-secondary/20 via-background to-accent/10 relative overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-accent/15 to-secondary/10 rounded-full blur-3xl"></div>
-        </div>
-        <div className="section-container relative z-10">
+      <section className="py-12 md:py-16 bg-secondary/30">
+        <div className="section-container">
           <div className="max-w-3xl">
-            <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
+            <h1 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-primary mb-4">
               Projects
             </h1>
             <p className="text-muted-foreground text-lg leading-relaxed">

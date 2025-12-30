@@ -1,14 +1,13 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@400;500;600;700&family=Source+Sans+3:wght@300;400;500;600;700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-/* Modern Engineering Design System
-   Primary: Deep Navy for authority and structure
-   Accent: Vibrant Cyan/Teal for technical energy
-   Secondary: Warm Gold for highlights and warmth
-   Typography: Modern Sans-serif (Poppins for headings, Inter for body)
+/* Classic Academic Design System
+   Primary: Deep Navy for headings and authority
+   Accent: Warm slate for professional warmth
+   Typography: Serif headings (Crimson Pro), Sans-serif body (Source Sans 3)
 */
 
 @layer base {
@@ -25,13 +24,13 @@
     --primary: 220 50% 20%;
     --primary-foreground: 40 20% 98%;
 
-    --secondary: 180 70% 50%;
+    --secondary: 215 20% 93%;
     --secondary-foreground: 220 30% 20%;
 
     --muted: 220 15% 94%;
     --muted-foreground: 220 10% 45%;
 
-    --accent: 200 100% 40%;
+    --accent: 200 60% 35%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
@@ -46,10 +45,9 @@
     /* Custom tokens for portfolio */
     --navy: 220 50% 20%;
     --navy-light: 220 40% 35%;
-    --cyan: 180 70% 50%;
-    --gold: 40 100% 50%;
-    --teal: 180 65% 35%;
+    --slate-warm: 215 15% 55%;
     --cream: 40 20% 98%;
+    --gold: 40 70% 50%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -74,13 +72,13 @@
     --primary: 40 15% 95%;
     --primary-foreground: 220 30% 10%;
 
-    --secondary: 180 70% 50%;
-    --secondary-foreground: 220 30% 10%;
+    --secondary: 220 20% 20%;
+    --secondary-foreground: 40 15% 95%;
 
     --muted: 220 20% 18%;
     --muted-foreground: 220 10% 60%;
 
-    --accent: 180 100% 60%;
+    --accent: 200 50% 50%;
     --accent-foreground: 220 30% 10%;
 
     --destructive: 0 62.8% 30.6%;
@@ -92,10 +90,9 @@
 
     --navy: 220 40% 80%;
     --navy-light: 220 30% 65%;
-    --cyan: 180 70% 55%;
-    --teal: 180 65% 50%;
-    --gold: 40 100% 60%;
+    --slate-warm: 215 15% 60%;
     --cream: 220 30% 10%;
+    --gold: 40 70% 55%;
 
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -118,19 +115,7 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-heading font-bold tracking-tight text-primary;
-  }
-
-  h1 {
-    @apply text-5xl md:text-6xl;
-  }
-
-  h2 {
-    @apply text-3xl md:text-4xl;
-  }
-
-  h3 {
-    @apply text-2xl md:text-3xl;
+    @apply font-serif font-semibold tracking-tight text-primary;
   }
 }
 
@@ -144,31 +129,27 @@
   }
 
   .card-elevated {
-    @apply bg-card rounded-lg border border-border shadow-sm hover:shadow-lg transition-all duration-300 hover:border-accent/30;
+    @apply bg-card rounded-lg border border-border shadow-sm hover:shadow-md transition-shadow duration-300;
   }
 
   .link-underline {
-    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-gradient-to-r after:from-accent after:to-secondary after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
+    @apply relative inline-block after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left;
   }
 
   .btn-primary {
-    @apply bg-gradient-to-r from-primary to-primary/90 text-primary-foreground hover:shadow-lg px-6 py-3 rounded font-semibold transition-all duration-200 font-heading;
+    @apply bg-primary text-primary-foreground hover:bg-primary/90 px-6 py-3 rounded font-medium transition-colors duration-200;
   }
 
   .btn-secondary {
-    @apply bg-secondary/10 text-secondary hover:bg-secondary/20 px-6 py-3 rounded font-semibold transition-colors duration-200 border border-secondary/30 font-heading;
+    @apply bg-secondary text-secondary-foreground hover:bg-secondary/80 px-6 py-3 rounded font-medium transition-colors duration-200 border border-border;
   }
 
   .tag {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-secondary/10 text-secondary border border-secondary/30;
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-secondary text-secondary-foreground;
   }
 
   .tag-accent {
-    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-semibold bg-accent/10 text-accent border border-accent/30;
-  }
-
-  .gradient-text {
-    @apply bg-gradient-to-r from-primary via-accent to-secondary bg-clip-text text-transparent;
+    @apply inline-flex items-center px-3 py-1 rounded-full text-sm font-medium bg-accent/10 text-accent border border-accent/20;
   }
 }
 

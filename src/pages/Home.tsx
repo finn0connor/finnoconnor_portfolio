@@ -11,20 +11,16 @@ export default function Home() {
   return (
     <Layout>
       {/* Hero Section */}
-      <section className="page-section bg-gradient-to-br from-secondary/20 via-background to-accent/10 relative overflow-hidden">
-        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute -top-40 -right-40 w-80 h-80 bg-gradient-to-br from-accent/20 to-secondary/10 rounded-full blur-3xl"></div>
-          <div className="absolute -bottom-20 -left-40 w-80 h-80 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-full blur-3xl"></div>
-        </div>
-        <div className="section-container relative z-10">
+      <section className="page-section bg-gradient-to-b from-secondary/30 to-background">
+        <div className="section-container">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
-            <h1 className="font-heading text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent mb-6 leading-tight">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
               Welcome!
             </h1>
-            <p className="text-lg md:text-xl text-primary font-semibold mb-4 leading-relaxed">
+            <p className="text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed">
               Hi, my name is Finn
             </p>
-            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed text-base md:text-lg">
+            <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
               I am a Masters student in Mechanical & Manufacturing Engineering at Trinity College Dublin. 
               I have an interest in engineering, energy markets, and technology.
               I am skilled in CAD, programming, simulation, and data analysis, and I enjoy applying these skills to solve real-world challenges.
@@ -49,27 +45,22 @@ export default function Home() {
       </section>
 
       {/* What I'm Looking For */}
-      <section className="py-12 bg-gradient-to-r from-primary to-primary/90 text-primary-foreground relative overflow-hidden">
-        <div className="absolute inset-0 opacity-10">
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-accent/20 to-transparent"></div>
-        </div>
-        <div className="section-container relative z-10">
+      <section className="py-12 bg-primary text-primary-foreground">
+        <div className="section-container">
           <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            <div className="shrink-0 p-3 bg-primary-foreground/10 rounded-lg">
-              <Briefcase size={32} className="text-primary-foreground" />
-            </div>
-            <div className="flex-grow">
-              <h2 className="font-heading text-2xl md:text-3xl font-bold mb-2 text-primary-foreground">
+            <Briefcase size={32} className="shrink-0" />
+            <div>
+              <h2 className="font-serif text-xl md:text-2xl font-semibold mb-2 text-primary-foreground">
                 Currently Seeking Opportunities
               </h2>
-              <p className="text-primary-foreground/90 text-lg">
+              <p className="text-primary-foreground/80">
                 I'm looking for roles in mechanical/manufacturing engineering where I can apply my skills in design, 
                 analysis, and software development to solve real engineering challenges.
               </p>
             </div>
             <Link 
               to="/contact" 
-              className="shrink-0 bg-primary-foreground text-primary px-6 py-3 rounded font-semibold hover:bg-primary-foreground/90 transition-all shadow-lg hover:shadow-xl"
+              className="shrink-0 bg-primary-foreground text-primary px-6 py-3 rounded font-medium hover:bg-primary-foreground/90 transition-colors"
             >
               Get in Touch
             </Link>
@@ -78,13 +69,13 @@ export default function Home() {
       </section>
 
       {/* Featured Projects */}
-      <section className="page-section bg-gradient-to-b from-background via-secondary/5 to-background">
+      <section className="page-section">
         <div className="section-container">
           <div className="text-center mb-12">
-            <h2 className="font-heading text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-4">
+            <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4">
               Featured Projects
             </h2>
-            <p className="text-muted-foreground max-w-2xl mx-auto text-lg">
+            <p className="text-muted-foreground max-w-2xl mx-auto">
               A selection of my work spanning CAD design, programming, and engineering analysis.
             </p>
           </div>
