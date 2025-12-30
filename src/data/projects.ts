@@ -8,7 +8,7 @@ export interface Project {
   description: string;
   outcome: string;
   pdfUrl?: string;
-  pdfs?: { label: string; url: string }[];
+  pdfs?: { label: string; url: string; description?: string }[];
   codeUrl?: string;
   demoUrl?: string;
 }
@@ -17,16 +17,32 @@ export interface Project {
 export const projects: Project[] = [
   {
     id: "1",
-    title: "Research Methods - Engineering Research Assignments",
+    title: "Research Methods: Investigation into Acoustic Liners for UAM Applications",
     discipline: "Engineering Analysis",
-    tags: ["Research", "Analysis", "Documentation", "Engineering Methods"],
-    description: "Comprehensive research methods coursework covering literature review, experimental design, data analysis, and technical reporting.",
-    outcome: "Completed four major research assignments demonstrating proficiency in engineering research methodologies and technical communication.",
+    tags: ["Research", "Acoustics", "UAM", "Additive Manufacturing", "Noise Reduction"],
+    description: "Comprehensive research investigation into acoustic liner technologies for Urban Air Mobility (UAM) applications, focusing on noise reduction solutions for next-generation aircraft.",
+    outcome: "Completed four major research milestones demonstrating advanced understanding of acoustic engineering principles and research methodology in emerging aviation technologies.",
     pdfs: [
-      { label: "Assignment 1", url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_1.pdf" },
-      { label: "Assignment 2", url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_2.pdf" },
-      { label: "Assignment 3", url: "/finnoconnor_portfolio/projects/4E3-Research-Methods-Assignment3-Group17.pdf" },
-      { label: "Assignment 4", url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_4.pdf" }
+      { 
+        label: "Literature Review of Acoustic Liner Technologies", 
+        url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_1.pdf",
+        description: "This literature review examines the current state of acoustic liner technologies, analyzing various design approaches and materials used in noise reduction applications. The review synthesizes findings from recent academic research and industry applications to establish a foundation for innovative acoustic solutions."
+      },
+      { 
+        label: "Research Design Proposal", 
+        url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_2.pdf",
+        description: "A comprehensive research design proposal outlining the methodology, experimental approach, and analytical framework for investigating hybrid acoustic liner performance. The proposal details the research questions, hypotheses, data collection methods, and analytical techniques to be employed in the investigation."
+      },
+      { 
+        label: "Research Proposal Presentation", 
+        url: "/finnoconnor_portfolio/projects/4E3-Research-Methods-Assignment3-Group17.pdf",
+        description: "Visual presentation of the research proposal, communicating the project's objectives, methodology, and expected outcomes to stakeholders. The presentation demonstrates the feasibility and significance of the proposed research into acoustic liner technologies for UAM applications."
+      },
+      { 
+        label: "Conference Paper: Transmission-Loss Performance of Additively Manufactured Hybrid Acoustic Liners for UAM Applications", 
+        url: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_4.pdf",
+        description: "A formal conference paper presenting the findings from experimental testing of additively manufactured hybrid acoustic liners. The paper analyzes transmission-loss performance metrics and discusses the implications for noise reduction in Urban Air Mobility vehicles, contributing to the advancement of sustainable aviation technologies."
+      }
     ],
   },
   {

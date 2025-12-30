@@ -75,28 +75,36 @@ export function ProjectCard({ project }: ProjectCardProps) {
           )}
 
           {project.pdfs && project.pdfs.map((pdf, index) => (
-            <div key={index} className="flex gap-2">
-              <button
-                onClick={() => setExpandedPdfIndex(expandedPdfIndex === index ? null : index)}
-                className={cn(
-                  "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
-                  expandedPdfIndex === index
-                    ? "bg-accent text-accent-foreground"
-                    : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+            <div key={index} className="w-full mt-4">
+              <div className="border-t border-border pt-4">
+                <h4 className="font-semibold text-foreground mb-2">{pdf.label}</h4>
+                {pdf.description && (
+                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{pdf.description}</p>
                 )}
-              >
-                <FileText size={16} />
-                {expandedPdfIndex === index ? `Hide ${pdf.label}` : `View ${pdf.label}`}
-                {expandedPdfIndex === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
-              </button>
-              <a
-                href={pdf.url}
-                download
-                className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
-              >
-                <Download size={16} />
-                Download {pdf.label}
-              </a>
+                <div className="flex gap-2">
+                  <button
+                    onClick={() => setExpandedPdfIndex(expandedPdfIndex === index ? null : index)}
+                    className={cn(
+                      "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
+                      expandedPdfIndex === index
+                        ? "bg-accent text-accent-foreground"
+                        : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+                    )}
+                  >
+                    <FileText size={16} />
+                    {expandedPdfIndex === index ? "Hide Document" : "View Document"}
+                    {expandedPdfIndex === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                  </button>
+                  <a
+                    href={pdf.url}
+                    download
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+                  >
+                    <Download size={16} />
+                    Download
+                  </a>
+                </div>
+              </div>
             </div>
           ))}
 
