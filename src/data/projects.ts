@@ -30,7 +30,7 @@ export const projects: Project[] = [
     tags: ["Python", "G-Code", "Optimization"],
     description: "Developed a Python application to optimize CNC toolpaths, reducing machining time and tool wear through intelligent path planning.",
     outcome: "Achieved 25% reduction in cycle time across test parts.",
-    pdfUrl: "/projects/cnc-optimization.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/4B13_Assignment2_FinnOConnor.pdf",
     codeUrl: "https://github.com/username/cnc-optimizer",
   },
   {
@@ -40,7 +40,7 @@ export const projects: Project[] = [
     tags: ["ANSYS", "CFD", "Heat Transfer"],
     description: "Conducted comprehensive thermal and flow analysis of a shell-and-tube heat exchanger using computational fluid dynamics.",
     outcome: "Identified design modifications that improved thermal efficiency by 15%.",
-    pdfUrl: "/projects/heat-exchanger.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/4B17_Final_Assignment_FinnOConnor.pdf",
   },
   {
     id: "4",
@@ -49,7 +49,7 @@ export const projects: Project[] = [
     tags: ["Fusion 360", "3D Printing", "Mechanisms"],
     description: "Designed an adaptive gripper mechanism capable of handling objects of varying geometries using compliant mechanisms.",
     outcome: "Successfully manufactured and tested prototype with 95% grip reliability.",
-    pdfUrl: "/projects/gripper.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/4B7_Computer_Aided_Design__B4_Assignment_3.pdf",
   },
   {
     id: "5",
@@ -58,7 +58,7 @@ export const projects: Project[] = [
     tags: ["JavaScript", "React", "Algorithms"],
     description: "Built a web-based production scheduling system using constraint satisfaction algorithms to optimize job shop scheduling.",
     outcome: "Deployed system reduced scheduling conflicts by 60%.",
-    pdfUrl: "/projects/scheduling.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_1.pdf",
     demoUrl: "https://demo.example.com",
   },
   {
@@ -68,7 +68,7 @@ export const projects: Project[] = [
     tags: ["Abaqus", "FEA", "Fatigue Analysis"],
     description: "Performed finite element analysis on a custom bicycle frame design, including static loading and fatigue life prediction.",
     outcome: "Validated design meets safety factor requirements with 20% weight reduction.",
-    pdfUrl: "/projects/bicycle-frame.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_2.pdf",
   },
   {
     id: "7",
@@ -77,7 +77,7 @@ export const projects: Project[] = [
     tags: ["AutoCAD", "P&ID", "Pneumatics"],
     description: "Designed complete pneumatic circuit and component layout for an industrial automation system.",
     outcome: "System commissioned successfully with zero air leaks.",
-    pdfUrl: "/projects/pneumatic.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/4E3-Research-Methods-Assignment3-Group17.pdf",
   },
   {
     id: "8",
@@ -86,7 +86,7 @@ export const projects: Project[] = [
     tags: ["Python", "TensorFlow", "Computer Vision"],
     description: "Implemented a computer vision system using deep learning to detect manufacturing defects in real-time.",
     outcome: "Achieved 98.5% defect detection accuracy on production line.",
-    pdfUrl: "/projects/ml-quality.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/4E3_Research_Methods__G17_Assignment_4.pdf",
     codeUrl: "https://github.com/username/defect-detection",
   },
   {
@@ -96,7 +96,7 @@ export const projects: Project[] = [
     tags: ["MATLAB", "Signal Processing", "Diagnostics"],
     description: "Developed vibration analysis methodology for predictive maintenance of rotating equipment using spectral analysis.",
     outcome: "Prevented 3 potential equipment failures during pilot program.",
-    pdfUrl: "/projects/vibration.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/4E17-Multibody-Dynamics-Leg-Kick-FinnOConnor.pdf",
   },
   {
     id: "10",
@@ -105,7 +105,7 @@ export const projects: Project[] = [
     tags: ["Moldflow", "SolidWorks", "DFM"],
     description: "Designed injection mold tooling for consumer product housing, including cooling channel optimization and gate placement.",
     outcome: "Reduced cycle time by 18% compared to initial design.",
-    pdfUrl: "/projects/injection-mold.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/3B3_MicroProject_FinnOConnor_22336740.pdf",
   },
   {
     id: "11",
@@ -114,7 +114,7 @@ export const projects: Project[] = [
     tags: ["Python", "AWS", "IoT"],
     description: "Built a data pipeline for processing and visualizing real-time sensor data from manufacturing equipment.",
     outcome: "Enabled real-time monitoring of 50+ machines.",
-    pdfUrl: "/projects/iot-pipeline.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/3B4-Mechanical-Engineering-Materials-finnoconnor.pdf",
   },
   {
     id: "12",
@@ -123,7 +123,7 @@ export const projects: Project[] = [
     tags: ["LS-DYNA", "Explicit FEA", "Safety"],
     description: "Conducted crash simulation analysis for automotive component design, evaluating energy absorption and deformation patterns.",
     outcome: "Design iteration improved energy absorption by 22%.",
-    pdfUrl: "/projects/crash-sim.pdf",
+    pdfUrl: "/finnoconnor_portfolio/projects/3B5 Mechanics of Machines - Assignment 1 Part 2.pdf",
   },
   {
     id: "13",
