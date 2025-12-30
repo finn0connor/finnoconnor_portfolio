@@ -15,14 +15,15 @@ export default function Home() {
         <div className="section-container">
           <div className="max-w-3xl mx-auto text-center animate-fade-in">
             <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6 leading-tight">
-              Building Practical Systems
+              Welcome
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground mb-4 leading-relaxed">
-              Hi, I'm <span className="text-foreground font-semibold">Finn O'Connor</span>
+              Hi, my name is Finn
             </p>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-              Masters student in Mechanical & Manufacturing Engineering at Trinity College Dublin. 
-              I combine CAD design, programming, and engineering analysis to create solutions that work in the real world.
+              I am a Masters student in Mechanical & Manufacturing Engineering at Trinity College Dublin. 
+              I have an interest in engineering, energy markets, and technology.
+              I am skilled in CAD, programming, simulation, and data analysis, and I enjoy applying these skills to solve real-world challenges.
             </p>
             
             <div className="flex flex-wrap justify-center gap-4">

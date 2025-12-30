@@ -94,16 +94,12 @@ export function ProjectCard({ project }: ProjectCardProps) {
         <div className="border-t border-border animate-accordion-down">
           <div className="p-4 bg-muted/30">
             <div className="aspect-[8.5/11] w-full max-h-[80vh] bg-background rounded border border-border overflow-hidden">
-              <object
-                data={project.pdfUrl}
-                type="application/pdf"
+              <iframe
+                src={`${project.pdfUrl}#toolbar=0`}
                 className="w-full h-full"
                 title={`${project.title} - PDF Report`}
-              >
-                <p className="p-4 text-center text-muted-foreground">
-                  Your browser does not support PDFs. <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Download the PDF</a> instead.
-                </p>
-              </object>
+                style={{ border: 'none' }}
+              />
             </div>
             <p className="text-xs text-muted-foreground mt-2 text-center">
               Having trouble viewing? <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Open in new tab</a>
