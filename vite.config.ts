@@ -1,5 +1,5 @@
 export default defineConfig(({ mode }) => ({
-  base: "/finnoconnor_portfolio/",   // <-- add this line
+  base: '/finnoconnor_portfolio/',
   server: {
     host: "::",
     port: 8080,
