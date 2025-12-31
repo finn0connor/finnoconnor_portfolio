@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Download, Mail, Zap, Factory, Leaf, Cog } from "lucide-react";
+import { ArrowRight, Download, Mail, Zap, Factory, Leaf, Cog, Linkedin, Phone } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 export default function Home() {
@@ -30,10 +30,29 @@ export default function Home() {
                 <Download size={18} />
                 Download CV
               </Link>
-              <Link to="/contact" className="btn-secondary inline-flex items-center gap-2">
+              <a
+                href="mailto:foconno1@tcd.ie"
+                className="btn-secondary inline-flex items-center gap-2"
+              >
                 <Mail size={18} />
-                Contact Me
-              </Link>
+                Email
+              </a>
+              <a
+                href="https://www.linkedin.com/in/finn-oconnor/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-secondary inline-flex items-center gap-2"
+              >
+                <Linkedin size={18} />
+                LinkedIn
+              </a>
+              <a
+                href="tel:+353874634990"
+                className="btn-secondary inline-flex items-center gap-2"
+              >
+                <Phone size={18} />
+                Call
+              </a>
             </div>
           </div>
         </div>
@@ -97,16 +116,6 @@ export default function Home() {
                 performance analysis, and creating innovative solutions for complex engineering challenges.
               </p>
             </div>
-          </div>
-
-          <div className="text-center">
-            <Link 
-              to="/contact" 
-              className="btn-primary inline-flex items-center gap-2"
-            >
-              <Mail size={18} />
-              Get in Touch
-            </Link>
           </div>
         </div>
       </section>
