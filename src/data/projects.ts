@@ -117,6 +117,24 @@ export const projects: Project[] = [
     outcome: "Built a computational model in MATLAB to simulate the kinematic behaviour of the pumpjack mechanism. The analysis provided detailed insights into component motion, velocity, and acceleration profiles, demonstrating proficiency in classical mechanics and computational modelling techniques.",
     pdfUrl: "/finnoconnor_portfolio/projects/3B5 Mechanics of Machines - Assignment 1 Part 2.pdf",
   },
+  {
+    id: "10",
+    title: "Heat Exchanger Laboratory Experiment and Analysis",
+    discipline: "Engineering Analysis",
+    tags: ["Heat Transfer", "Experimental Analysis", "Thermal Dynamics", "Data Analysis", "MATLAB", "Laboratory Techniques"],
+    description: "Conducted a comprehensive laboratory experiment investigating heat exchanger performance, examining heat transfer efficiency, temperature profiles, and energy balance across various operating conditions.",
+    outcome: "Analysed experimental data to characterise heat exchanger effectiveness and thermal performance. Developed computational models to validate experimental findings and demonstrated proficiency in practical thermal engineering, data analysis, and experimental methodology.",
+    pdfUrl: "/finnoconnor_portfolio/projects/4B4_Heat_Exchanger_Lab_Report_Mech-14.pdf",
+  },
+  {
+    id: "11",
+    title: "Thermodynamics: Refrigeration Laboratory Experiment",
+    discipline: "Engineering Analysis",
+    tags: ["Thermodynamics", "Refrigeration Systems", "Experimental Analysis", "Heat Transfer", "Laboratory Techniques", "Data Analysis"],
+    description: "Performed a laboratory investigation into refrigeration system performance, focusing on thermodynamic cycles, cooling capacity, energy efficiency, and component interactions within a refrigeration apparatus.",
+    outcome: "Collected and analysed experimental data to evaluate refrigeration system efficiency and thermodynamic behaviour. The investigation demonstrated practical understanding of refrigeration principles, experimental design, instrumentation techniques, and the application of thermodynamic theory to real engineering systems.",
+    pdfUrl: "/finnoconnor_portfolio/projects/3B1_Thermodynamics_Refrigeration_Lab_FOC_22336740.pdf",
+  },
 ];
 
 export const disciplines: Discipline[] = ["CAD & Design", "Programming & Software", "Engineering Analysis"];
