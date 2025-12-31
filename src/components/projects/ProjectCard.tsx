@@ -137,7 +137,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 {/* PDF Viewer for this specific document */}
                 {expandedPdfIndex === index && (
                   <div className="mt-3 sm:mt-4 border-t border-border pt-3 sm:pt-4 animate-accordion-down">
-                    <div className="aspect-[8.5/11] w-full max-h-[60vh] sm:max-h-[80vh] bg-background rounded border border-border overflow-hidden">
+                    <div className="w-full h-[500px] sm:h-[600px] md:h-[800px] bg-background rounded border border-border overflow-auto">
                       <iframe
                         src={pdf.url}
                         className="w-full h-full"
@@ -204,7 +204,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {isExpanded && project.pdfUrl && (
         <div className="border-t border-border animate-accordion-down">
           <div className="p-3 sm:p-4 bg-muted/30">
-            <div className="aspect-[8.5/11] w-full max-h-[60vh] sm:max-h-[80vh] bg-background rounded border border-border overflow-hidden">
+            <div className="w-full h-[500px] sm:h-[600px] md:h-[800px] bg-background rounded border border-border overflow-auto">
               <iframe
                 src={project.pdfUrl}
                 className="w-full h-full"

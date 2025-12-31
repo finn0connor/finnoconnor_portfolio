@@ -42,7 +42,7 @@ export default function CV() {
                 <img 
                   src="/finnoconnor_portfolio/Trinity-Main-Logo.jpg" 
                   alt="Trinity College Dublin Logo" 
-                  className="h-16 sm:h-20 md:h-24 shrink-0"
+                  className="h-16 sm:h-20 md:h-24 shrink-0 w-auto"
                 />
               </div>
               
