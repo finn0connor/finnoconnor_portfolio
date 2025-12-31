@@ -128,7 +128,7 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-xl font-semibold mb-3">CAD & Design</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                SolidWorks, Fusion 360, AutoCAD. Experienced in DFM, GD&T, and creating production-ready designs.
+                SolidWorks, AutoCAD, Revit. Experienced in DFM, GD&T, and creating production-ready designs.
               </p>
             </div>
 
@@ -139,9 +139,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-3">Programming & Software</h3>
+              <h3 className="font-serif text-xl font-semibold mb-3">Programming & Data Analysis</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Python, JavaScript, MATLAB. Building tools for automation, optimization, and data analysis.
+                Python, C++, MATLAB, Excel, Arduino. Building tools for automation, optimization, and quantitative analysis.
               </p>
             </div>
 
@@ -152,9 +152,9 @@ export default function Home() {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-3">Engineering Analysis</h3>
+              <h3 className="font-serif text-xl font-semibold mb-3">Engineering Analysis & Simulation</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                ANSYS, Abaqus, LS-DYNA. FEA, CFD, and simulation-driven design optimization.
+                ANSYS, CFD, FEA, MATLAB. Simulation-driven design optimization and performance analysis.
               </p>
             </div>
           </div>

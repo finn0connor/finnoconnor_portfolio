@@ -214,7 +214,7 @@ export default function CV() {
                 <div>
                   <h4 className="font-medium text-foreground mb-2 text-sm">CAD & Design</h4>
                   <p className="text-sm text-muted-foreground">
-                    SolidWorks, Fusion 360, AutoCAD, Revit
+                    SolidWorks, AutoCAD, Revit, BlueBeam
                   </p>
                 </div>
                 <div>
