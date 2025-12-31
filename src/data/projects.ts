@@ -155,7 +155,7 @@ export const projects: Project[] = [
     pdfs: [
       {
         label: "Final Poster",
-        url: "/finnoconnor_portfolio/projects/universal-design-innovation-final-poster.pdf",
+        url: "/finnoconnor_portfolio/projects/universal-design-innovation-poster-latest.pdf",
         description: "One-page poster summarising the inclusive design concept, core features, and accessibility benefits."
       },
       {
