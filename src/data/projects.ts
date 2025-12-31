@@ -148,29 +148,29 @@ export const projects: Project[] = [
   },
   {
     id: "13",
-    title: "Universal Design Innovation: Inclusive Product Development",
+    title: "Echo Eye: Cyclist Traffic Detection and Alert System",
     disciplines: ["CAD & Design", "Programming & Software"],
-    tags: ["Universal Design", "Human-Centred Design", "Concept Development", "Prototyping", "Presentation"],
-    description: "Developed an inclusive product concept following Universal Design principles, focusing on accessibility, user research, and iterative prototyping. Communicated the solution through both a poster and a slide deck summarising research insights, design rationale, and proposed features.",
-    outcome: "Produced a comprehensive design package combining research, concept visuals, and user-centric justification. Presented the work via a final poster and slide deck to clearly convey the design's value and accessibility impact.",
+    tags: ["Electronics", "SolidWorks", "3D Modelling", "Additive Manufacturing", "Arduino", "Product Design", "Market Research", "Prototyping", "Universal Design"],
+    description: "Developed 'Echo Eye', an innovative cyclist safety device that uses LiDAR technology to detect approaching vehicles and alert cyclists by applying a vibration through the handlebars. The project encompassed product design, market research, prototyping, and user-centric development to enhance road safety for cyclists.",
+    outcome: "Through the use of CAD, 3D printing, electronics prototyping with Arduino, and user testing, 'Echo Eye' successfully demonstrated the potential to improve cyclist safety by providing timely alerts of nearby traffic. The project highlighted the importance of universal design principles in creating accessible and effective safety solutions.",
     pdfs: [
       {
         label: "Final Poster",
         url: "/finnoconnor_portfolio/projects/universal-design-innovation-poster-latest.pdf",
-        description: "One-page poster summarising the inclusive design concept, core features, and accessibility benefits."
+        description: "One-page poster summarising the design, core features, and benefits."
       },
       {
         label: "Slide Deck",
         url: "/finnoconnor_portfolio/projects/universal-design-innovation-slide-deck.pdf",
-        description: "Presentation slides detailing research insights, design process, user needs, and proposed solution."
+        description: "This presentation gives a detailed insight into the design process and final prototype specifications."
       }
     ],
   },
   {
     id: "14",
-    title: "Campus Sound Intensity Distribution Analysis",
+    title: "Probability and Statistics: Sound Intensity Analysis on Trinity College Campus",
     disciplines: ["Engineering Analysis", "Programming & Software"],
-    tags: ["MATLAB", "Data Analysis", "Acoustics", "Statistical Modelling", "Probability Distributions"],
+    tags: ["MATLAB", "Data Analysis", "Statistical Modelling", "Probability Distributions"],
     description: "Analysed sound intensity measurements taken at three locations across Trinity's campus, using MATLAB to explore distributional fits and campus noise characteristics.",
     outcome: "Compared lognormal, Weibull, and exponential models against observed sound intensity data to determine the best-fitting distribution and quantify noise behaviour at each site.",
     pdfUrl: "/finnoconnor_portfolio/projects/3E3_Group29_Assignment2.pdf",
