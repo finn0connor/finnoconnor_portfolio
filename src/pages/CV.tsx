@@ -33,20 +33,20 @@ export default function CV() {
         <div className="section-container">
           <div className="max-w-4xl mx-auto">
             {/* Header / Contact */}
-            <div className="bg-card rounded-lg p-8 border border-border mb-8">
-              <div className="flex justify-between items-start gap-6 mb-4">
+            <div className="bg-card rounded-lg p-4 sm:p-6 md:p-8 border border-border mb-8">
+              <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-6 mb-4">
                 <div className="flex-1">
-                  <h2 className="font-serif text-3xl font-bold text-primary mb-2">Finn O'Connor</h2>
-                  <p className="text-lg text-accent mb-6">M.Eng, MAI (Hons) Master of Mechanical Engineering</p>
+                  <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">Finn O'Connor</h2>
+                  <p className="text-base sm:text-lg text-accent mb-4 sm:mb-6">M.Eng, MAI (Hons) Master of Mechanical Engineering</p>
                 </div>
                 <img 
                   src="/finnoconnor_portfolio/Trinity-Main-Logo.jpg" 
                   alt="Trinity College Dublin Logo" 
-                  className="h-24 shrink-0"
+                  className="h-16 sm:h-20 md:h-24 shrink-0"
                 />
               </div>
               
-              <div className="grid sm:grid-cols-2 gap-4 text-sm">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
                 <div className="flex items-center gap-2 text-muted-foreground">
                   <Mail size={16} />
                   <a href="mailto:foconno1@tcd.ie" className="hover:text-accent transition-colors">

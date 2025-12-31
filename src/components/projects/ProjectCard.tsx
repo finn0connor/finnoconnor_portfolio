@@ -22,18 +22,18 @@ export function ProjectCard({ project }: ProjectCardProps) {
   return (
     <article className="card-elevated overflow-hidden">
       {/* Card Header */}
-      <div className="p-6">
-        <div className="flex items-start justify-between gap-4 mb-3">
-          <h3 className="font-serif text-xl font-semibold text-primary leading-tight">
+      <div className="p-4 sm:p-6">
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2 sm:gap-4 mb-3">
+          <h3 className="font-serif text-lg sm:text-xl font-semibold text-primary leading-tight">
             {project.title}
           </h3>
-          <span className="tag-accent shrink-0 text-xs">
+          <span className="tag-accent shrink-0 text-xs w-fit">
             {project.discipline}
           </span>
         </div>
 
         {/* Tags */}
-        <div className="flex flex-wrap gap-2 mb-4">
+        <div className="flex flex-wrap gap-2 mb-3 sm:mb-4">
           {project.tags.map((tag) => (
             <span key={tag} className="tag text-xs">
               {tag}
@@ -42,32 +42,33 @@ export function ProjectCard({ project }: ProjectCardProps) {
         </div>
 
         {/* Description */}
-        <p className="text-muted-foreground text-sm leading-relaxed mb-3">
+        <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed mb-2 sm:mb-3">
           {project.description}
         </p>
 
         {/* Outcome */}
-        <div className="bg-secondary/50 rounded p-3 mb-4">
-          <p className="text-sm">
+        <div className="bg-secondary/50 rounded p-3 mb-3 sm:mb-4">
+          <p className="text-xs sm:text-sm">
             <span className="font-semibold text-foreground">Outcome: </span>
             <span className="text-muted-foreground">{project.outcome}</span>
           </p>
         </div>
 
         {/* Action Buttons */}
-        <div className="flex flex-wrap items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           {project.videoUrl && (
             <button
               onClick={() => setShowVideo(!showVideo)}
               className={cn(
-                "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
+                "inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium transition-colors",
                 showVideo
                   ? "bg-accent text-accent-foreground"
                   : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
               )}
             >
-              <Play size={16} />
-              {showVideo ? "Hide Video" : "View Video"}
+              <Play size={14} className="sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">{showVideo ? "Hide Video" : "View Video"}</span>
+              <span className="sm:hidden">{showVideo ? "Hide" : "Video"}</span>
               {showVideo ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
             </button>
           )}
@@ -77,62 +78,66 @@ export function ProjectCard({ project }: ProjectCardProps) {
               <button
                 onClick={() => setIsExpanded(!isExpanded)}
                 className={cn(
-                  "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
+                  "inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium transition-colors",
                   isExpanded
                     ? "bg-accent text-accent-foreground"
                     : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                 )}
               >
-                <FileText size={16} />
-                {isExpanded ? "Hide Report" : "View Report"}
-                {isExpanded ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                <FileText size={14} className="sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">{isExpanded ? "Hide Report" : "View Report"}</span>
+                <span className="sm:hidden">{isExpanded ? "Hide" : "Report"}</span>
+                {isExpanded ? <ChevronUp size={14} className="sm:w-4 sm:h-4" /> : <ChevronDown size={14} className="sm:w-4 sm:h-4" />}
               </button>
               <a
                 href={project.pdfUrl}
                 download
-                className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+                className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
               >
-                <Download size={16} />
-                Download Report
+                <Download size={14} className="sm:w-4 sm:h-4" />
+                <span className="hidden sm:inline">Download Report</span>
+                <span className="sm:hidden">Download</span>
               </a>
             </>
           )}
 
           {project.pdfs && project.pdfs.map((pdf, index) => (
-            <div key={index} className="w-full mt-4">
-              <div className="border-t border-border pt-4">
-                <h4 className="font-semibold text-foreground mb-2">{pdf.label}</h4>
+            <div key={index} className="w-full mt-3 sm:mt-4">
+              <div className="border-t border-border pt-3 sm:pt-4">
+                <h4 className="font-semibold text-sm sm:text-base text-foreground mb-2">{pdf.label}</h4>
                 {pdf.description && (
-                  <p className="text-sm text-muted-foreground mb-3 leading-relaxed">{pdf.description}</p>
+                  <p className="text-xs sm:text-sm text-muted-foreground mb-2 sm:mb-3 leading-relaxed">{pdf.description}</p>
                 )}
-                <div className="flex gap-2">
+                <div className="flex flex-wrap gap-2">
                   <button
                     onClick={() => setExpandedPdfIndex(expandedPdfIndex === index ? null : index)}
                     className={cn(
-                      "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
+                      "inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium transition-colors",
                       expandedPdfIndex === index
                         ? "bg-accent text-accent-foreground"
                         : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
                     )}
                   >
-                    <FileText size={16} />
-                    {expandedPdfIndex === index ? "Hide Document" : "View Document"}
-                    {expandedPdfIndex === index ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+                    <FileText size={14} className="sm:w-4 sm:h-4" />
+                    <span className="hidden sm:inline">{expandedPdfIndex === index ? "Hide Document" : "View Document"}</span>
+                    <span className="sm:hidden">{expandedPdfIndex === index ? "Hide" : "View"}</span>
+                    {expandedPdfIndex === index ? <ChevronUp size={14} className="sm:w-4 sm:h-4" /> : <ChevronDown size={14} className="sm:w-4 sm:h-4" />}
                   </button>
                   <a
                     href={pdf.url}
                     download
-                    className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+                    className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
                   >
-                    <Download size={16} />
-                    Download
+                    <Download size={14} className="sm:w-4 sm:h-4" />
+                    <span className="hidden sm:inline">Download</span>
+                    <span className="sm:hidden">DL</span>
                   </a>
                 </div>
                 
                 {/* PDF Viewer for this specific document */}
                 {expandedPdfIndex === index && (
-                  <div className="mt-4 border-t border-border pt-4 animate-accordion-down">
-                    <div className="aspect-[8.5/11] w-full max-h-[80vh] bg-background rounded border border-border overflow-hidden">
+                  <div className="mt-3 sm:mt-4 border-t border-border pt-3 sm:pt-4 animate-accordion-down">
+                    <div className="aspect-[8.5/11] w-full max-h-[60vh] sm:max-h-[80vh] bg-background rounded border border-border overflow-hidden">
                       <iframe
                         src={pdf.url}
                         className="w-full h-full"
@@ -154,10 +159,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.codeUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+              className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
             >
-              <Github size={16} />
-              Code
+              <Github size={14} className="sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">Code</span>
+              <span className="sm:hidden">Git</span>
             </a>
           )}
 
@@ -166,10 +172,11 @@ export function ProjectCard({ project }: ProjectCardProps) {
               href={project.demoUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
+              className="inline-flex items-center gap-2 px-3 sm:px-4 py-1.5 sm:py-2 rounded text-xs sm:text-sm font-medium bg-secondary text-secondary-foreground hover:bg-secondary/80 transition-colors"
             >
-              <ExternalLink size={16} />
-              Demo
+              <ExternalLink size={14} className="sm:w-4 sm:h-4" />
+              <span className="hidden sm:inline">Demo</span>
+              <span className="sm:hidden">Link</span>
             </a>
           )}
         </div>
@@ -178,7 +185,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Collapsible Video Viewer */}
       {showVideo && project.videoUrl && getYoutubeEmbedUrl(project.videoUrl) && (
         <div className="border-t border-border animate-accordion-down">
-          <div className="p-4 bg-muted/30">
+          <div className="p-3 sm:p-4 bg-muted/30">
             <div className="aspect-video w-full bg-background rounded border border-border overflow-hidden">
               <iframe
                 src={getYoutubeEmbedUrl(project.videoUrl) || ""}
@@ -196,8 +203,8 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {/* Collapsible PDF Viewer */}
       {isExpanded && project.pdfUrl && (
         <div className="border-t border-border animate-accordion-down">
-          <div className="p-4 bg-muted/30">
-            <div className="aspect-[8.5/11] w-full max-h-[80vh] bg-background rounded border border-border overflow-hidden">
+          <div className="p-3 sm:p-4 bg-muted/30">
+            <div className="aspect-[8.5/11] w-full max-h-[60vh] sm:max-h-[80vh] bg-background rounded border border-border overflow-hidden">
               <iframe
                 src={project.pdfUrl}
                 className="w-full h-full"
