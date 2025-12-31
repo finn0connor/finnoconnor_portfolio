@@ -70,7 +70,7 @@ export default function CV() {
                 Objective
               </h3>
               <p className="text-muted-foreground leading-relaxed pl-10">
-                Master of Mechanical Engineering student with a passion for the energy industry. Strong technical foundations in CAD, simulation, programming, and data analysis. 
+                Master of Mechanical Engineering student with a keen interest in the energy industry. Strong technical foundations in CAD, simulation, programming, and data analysis. 
                 Seeking opportunities to apply engineering expertise and analytical skills in energy trading, engineering design, and data-driven problem-solving.
               </p>
             </div>
@@ -132,7 +132,7 @@ export default function CV() {
                     <h4 className="font-semibold text-foreground">Intern</h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
-                      Jan 2026 – Present
+                      Oct 2025 – Present
                     </span>
                   </div>
                   <p className="text-accent text-sm mb-2">HappyStack — Dublin, Ireland</p>
