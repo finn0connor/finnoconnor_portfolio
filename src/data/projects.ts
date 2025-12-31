@@ -11,6 +11,7 @@ export interface Project {
   pdfs?: { label: string; url: string; description?: string }[];
   codeUrl?: string;
   demoUrl?: string;
+  videoUrl?: string;
 }
 
 // Sample projects - Replace with your actual project data
@@ -134,6 +135,15 @@ export const projects: Project[] = [
     description: "Performed a laboratory investigation into refrigeration system performance, focusing on thermodynamic cycles, cooling capacity, energy efficiency, and component interactions within a refrigeration apparatus.",
     outcome: "Collected and analysed experimental data to evaluate refrigeration system efficiency and thermodynamic behaviour. The investigation demonstrated practical understanding of refrigeration principles, experimental design, instrumentation techniques, and the application of thermodynamic theory to real engineering systems.",
     pdfUrl: "/finnoconnor_portfolio/projects/3B1_Thermodynamics_Refrigeration_Lab_FOC_22336740.pdf",
+  },
+  {
+    id: "12",
+    title: "Energy Systems and Sustainability Discussion",
+    discipline: "Programming & Software",
+    tags: ["Energy", "Sustainability", "Discussion", "Video Presentation", "Engineering Principles"],
+    description: "An engaging discussion on energy systems, sustainability initiatives, and modern engineering approaches to addressing environmental challenges and creating sustainable solutions for the future.",
+    outcome: "Presented comprehensive insights into energy systems management, sustainable practices, and the intersection of engineering innovation with environmental responsibility.",
+    videoUrl: "https://www.youtube.com/watch?v=YMPw99gwM_k",
   },
 ];
 

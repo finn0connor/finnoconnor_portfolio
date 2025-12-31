@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ChevronDown, ChevronUp, ExternalLink, Github, FileText, Download } from "lucide-react";
+import { ChevronDown, ChevronUp, ExternalLink, Github, FileText, Download, Play } from "lucide-react";
 import { Project } from "@/data/projects";
 import { cn } from "@/lib/utils";
 
@@ -10,6 +10,14 @@ interface ProjectCardProps {
 export function ProjectCard({ project }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [expandedPdfIndex, setExpandedPdfIndex] = useState<number | null>(null);
+  const [showVideo, setShowVideo] = useState(false);
+
+  // Extract YouTube video ID from URL
+  const getYoutubeEmbedUrl = (url: string) => {
+    const videoIdMatch = url.match(/(?:youtube\.com\/watch\?v=|youtu\.be\/)([^&\n?#]+)/);
+    const videoId = videoIdMatch?.[1];
+    return videoId ? `https://www.youtube.com/embed/${videoId}` : null;
+  };
 
   return (
     <article className="card-elevated overflow-hidden">
@@ -48,6 +56,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
 
         {/* Action Buttons */}
         <div className="flex flex-wrap items-center gap-3">
+          {project.videoUrl && (
+            <button
+              onClick={() => setShowVideo(!showVideo)}
+              className={cn(
+                "inline-flex items-center gap-2 px-4 py-2 rounded text-sm font-medium transition-colors",
+                showVideo
+                  ? "bg-accent text-accent-foreground"
+                  : "bg-secondary text-secondary-foreground hover:bg-secondary/80"
+              )}
+            >
+              <Play size={16} />
+              {showVideo ? "Hide Video" : "View Video"}
+              {showVideo ? <ChevronUp size={16} /> : <ChevronDown size={16} />}
+            </button>
+          )}
+
           {project.pdfUrl && (
             <>
               <button
@@ -150,6 +174,24 @@ export function ProjectCard({ project }: ProjectCardProps) {
           )}
         </div>
       </div>
+
+      {/* Collapsible Video Viewer */}
+      {showVideo && project.videoUrl && getYoutubeEmbedUrl(project.videoUrl) && (
+        <div className="border-t border-border animate-accordion-down">
+          <div className="p-4 bg-muted/30">
+            <div className="aspect-video w-full bg-background rounded border border-border overflow-hidden">
+              <iframe
+                src={getYoutubeEmbedUrl(project.videoUrl) || ""}
+                className="w-full h-full"
+                title={`${project.title} - Video`}
+                style={{ border: 'none' }}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+              />
+            </div>
+          </div>
+        </div>
+      )}
 
       {/* Collapsible PDF Viewer */}
       {isExpanded && project.pdfUrl && (
