@@ -32,17 +32,16 @@ export default function About() {
               </div>
               <div className="prose prose-slate max-w-none text-sm sm:text-base">
                 <p className="text-muted-foreground leading-relaxed mb-3">
-                  I'm a MAI (MEng) Master of Mechanical and Manufacturing Engineering student at Trinity College Dublin, The University of Dublin, 
+                  I'm a Master of Mechanical and Manufacturing Engineering student at Trinity College Dublin, 
                   passionate about building practical systems that solve real-world problems.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-3">
-                  My work sits at the intersection of traditional mechanical engineering and modern software tools. 
-                  I believe the best engineering solutions come from combining rigorous analysis with practical 
-                  implementation, whether that's through CAD design, FEA simulation, or writing code to automate 
-                  and optimise processes.
+                  I enjoy solving real-world problems using quantitative methods and technologies. 
+                  Through studying engineering, I've developed strong skills in CAD design, simulation, programming, and data analysis. 
+                  I'm particularly interested in energy trading and mechanical engineering for sustainable technologies.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  [Add more about your background, interests, and what drives you here]
+                  Outside of work, I enjoy rugby, running, the gym, and playing the piano.
                 </p>
               </div>
             </div>
