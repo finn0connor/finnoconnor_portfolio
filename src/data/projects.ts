@@ -155,12 +155,12 @@ export const projects: Project[] = [
     pdfs: [
       {
         label: "Final Poster",
-        url: "/finnoconnor_portfolio/projects/Universal%20Design%20Innovation%20-%20Final%20Poster.pdf",
+        url: "/finnoconnor_portfolio/projects/universal-design-innovation-final-poster.pdf",
         description: "One-page poster summarising the inclusive design concept, core features, and accessibility benefits."
       },
       {
         label: "Slide Deck",
-        url: "/finnoconnor_portfolio/projects/Universal%20Design%20Innovation%20-%20Slide%20Deck.pdf",
+        url: "/finnoconnor_portfolio/projects/universal-design-innovation-slide-deck.pdf",
         description: "Presentation slides detailing research insights, design process, user needs, and proposed solution."
       }
     ],
