@@ -39,7 +39,7 @@ export default function About() {
                   My work sits at the intersection of traditional mechanical engineering and modern software tools. 
                   I believe the best engineering solutions come from combining rigorous analysis with practical 
                   implementation, whether that's through CAD design, FEA simulation, or writing code to automate 
-                  and optimize processes.
+                  and optimise processes.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
                   [Add more about your background, interests, and what drives you here]

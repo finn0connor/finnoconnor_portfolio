@@ -57,8 +57,8 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-xl font-semibold mb-3">Energy and Commodity Trading</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Leveraging my background in energy markets, data analysis, and quantitative methods to optimize trading strategies, 
-                analyze market dynamics, and develop models for energy and commodity markets.
+                Leveraging my background in energy markets, data analysis, and quantitative methods to optimise trading strategies, 
+                analyse market dynamics, and develop models for energy and commodity markets.
               </p>
             </div>
 
@@ -69,7 +69,7 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-xl font-semibold mb-3">Energy Engineering</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Applying engineering principles to energy systems, including power generation, energy efficiency optimization, 
+                Applying engineering principles to energy systems, including power generation, energy efficiency optimisation, 
                 thermal systems design, and the development of sustainable energy infrastructure.
               </p>
             </div>
