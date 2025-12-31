@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ArrowRight, Download, Mail, Briefcase } from "lucide-react";
+import { ArrowRight, Download, Mail, Zap, Factory, Leaf, Cog } from "lucide-react";
 import { Layout } from "@/components/layout/Layout";
 
 export default function Home() {
@@ -39,24 +39,72 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What I'm Looking For */}
-      <section className="py-12 bg-primary text-primary-foreground">
+      {/* Career Interests */}
+      <section className="page-section">
         <div className="section-container">
-          <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8">
-            <Briefcase size={32} className="shrink-0" />
-            <div>
-              <h2 className="font-serif text-xl md:text-2xl font-semibold mb-2 text-primary-foreground">
-                Currently Seeking Opportunities
-              </h2>
-              <p className="text-primary-foreground/80">
-                I'm interested in opportunities within the energy and commodities industries, where I can apply my engineering expertise, 
-                analytical skills, and passion for energy markets to solve real-world challenges.
+          <h2 className="font-serif text-3xl md:text-4xl font-bold text-primary mb-4 text-center">
+            Currently Seeking Opportunities
+          </h2>
+          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
+            I'm interested in opportunities where I can apply my engineering expertise and analytical skills in the following areas:
+          </p>
+
+          <div className="grid md:grid-cols-2 gap-8 mb-12">
+            {/* Energy and Commodity Trading */}
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-accent/50 transition-colors">
+              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <Zap className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold mb-3">Energy and Commodity Trading</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Leveraging my background in energy markets, data analysis, and quantitative methods to optimize trading strategies, 
+                analyze market dynamics, and develop models for energy and commodity markets.
               </p>
             </div>
+
+            {/* Energy Engineering */}
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-accent/50 transition-colors">
+              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <Factory className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold mb-3">Energy Engineering</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Applying engineering principles to energy systems, including power generation, energy efficiency optimization, 
+                thermal systems design, and the development of sustainable energy infrastructure.
+              </p>
+            </div>
+
+            {/* Green Technology */}
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-accent/50 transition-colors">
+              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <Leaf className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold mb-3">Green Technology</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Contributing to sustainable innovation through renewable energy systems, carbon reduction technologies, 
+                and environmentally-conscious engineering solutions that address climate challenges.
+              </p>
+            </div>
+
+            {/* Mechanical Design Engineering */}
+            <div className="bg-card rounded-lg p-6 border border-border hover:border-accent/50 transition-colors">
+              <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
+                <Cog className="w-6 h-6 text-accent" />
+              </div>
+              <h3 className="font-serif text-xl font-semibold mb-3">Mechanical Design Engineering</h3>
+              <p className="text-muted-foreground text-sm leading-relaxed">
+                Designing and optimizing mechanical systems using CAD, FEA, and CFD tools, with focus on DFM principles, 
+                performance analysis, and creating innovative solutions for complex engineering challenges.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center">
             <Link 
               to="/contact" 
-              className="shrink-0 bg-primary-foreground text-primary px-6 py-3 rounded font-medium hover:bg-primary-foreground/90 transition-colors"
+              className="btn-primary inline-flex items-center gap-2"
             >
+              <Mail size={18} />
               Get in Touch
             </Link>
           </div>
