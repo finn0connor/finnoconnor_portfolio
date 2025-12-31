@@ -14,9 +14,9 @@ export function Footer() {
               Finn O'Connor
             </h3>
             <p className="text-primary-foreground/80 text-sm leading-relaxed">
-              Masters in Mechanical & Manufacturing Engineering
+              MAI (MEng) Master of Mechanical and Manufacturing Engineering
               <br />
-              Trinity College Dublin
+              Trinity College Dublin, The University of Dublin
             </p>
           </div>
 

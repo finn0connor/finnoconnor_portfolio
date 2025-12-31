@@ -17,7 +17,7 @@ export default function Home() {
             </p>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
               This website serves as a comprehensive portfolio and extension to my CV, showcasing my engineering projects, technical skills, and professional experience. 
-              I am a Masters student in Mechanical & Manufacturing Engineering at Trinity College Dublin with interests in engineering, energy markets, and technology. 
+              I am a MAI (MEng) Master of Mechanical and Manufacturing Engineering student at Trinity College Dublin, The University of Dublin with interests in engineering, energy markets, and technology. 
               Browse my projects to see examples of my work in CAD design, programming, simulation, and data analysis.
             </p>
             

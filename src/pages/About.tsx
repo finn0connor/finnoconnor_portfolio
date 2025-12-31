@@ -32,7 +32,7 @@ export default function About() {
               </div>
               <div className="prose prose-slate max-w-none text-sm sm:text-base">
                 <p className="text-muted-foreground leading-relaxed mb-3">
-                  I'm a Masters student in Mechanical & Manufacturing Engineering at Trinity College Dublin, 
+                  I'm a MAI (MEng) Master of Mechanical and Manufacturing Engineering student at Trinity College Dublin, The University of Dublin, 
                   passionate about building practical systems that solve real-world problems.
                 </p>
                 <p className="text-muted-foreground leading-relaxed mb-3">
@@ -61,11 +61,11 @@ export default function About() {
             <div className="bg-card rounded-lg p-4 sm:p-6 border border-border">
               <div className="flex flex-col gap-2 sm:gap-3 mb-2 sm:mb-3">
                 <h3 className="font-serif text-lg sm:text-xl font-semibold">
-                  Masters in Mechanical & Manufacturing Engineering
+                  MAI (MEng) Master of Mechanical and Manufacturing Engineering
                 </h3>
-                <span className="text-muted-foreground text-xs sm:text-sm">Expected 2025</span>
+                <span className="text-muted-foreground text-xs sm:text-sm">2022 – 2027</span>
               </div>
-              <p className="text-accent font-medium mb-2 text-sm sm:text-base">Trinity College Dublin</p>
+              <p className="text-accent font-medium mb-2 text-sm sm:text-base">Trinity College Dublin, The University of Dublin</p>
               <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
                 [Add details about your coursework, thesis topic, relevant modules, achievements]
               </p>
@@ -74,11 +74,11 @@ export default function About() {
             <div className="bg-card rounded-lg p-4 sm:p-6 border border-border">
               <div className="flex flex-col gap-2 sm:gap-3 mb-2 sm:mb-3">
                 <h3 className="font-serif text-lg sm:text-xl font-semibold">
-                  Bachelor's Degree
+                  BAI (BEng) Bachelor of Mechanical and Manufacturing Engineering
                 </h3>
                 <span className="text-muted-foreground text-xs sm:text-sm">[Year]</span>
               </div>
-              <p className="text-accent font-medium mb-2 text-sm sm:text-base">[University Name]</p>
+              <p className="text-accent font-medium mb-2 text-sm sm:text-base">Trinity College Dublin, The University of Dublin</p>
               <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
                 [Add details about your undergraduate education]
               </p>

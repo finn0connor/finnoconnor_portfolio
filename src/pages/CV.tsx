@@ -37,7 +37,7 @@ export default function CV() {
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-6 mb-4">
                 <div className="flex-1 min-w-0">
                   <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">Finn O'Connor</h2>
-                  <p className="text-base sm:text-lg text-accent mb-4 sm:mb-6">M.Eng, MAI (Hons) Master of Mechanical Engineering</p>
+                  <p className="text-base sm:text-lg text-accent mb-4 sm:mb-6">MAI (MEng) Master of Mechanical and Manufacturing Engineering</p>
                 </div>
                 <div className="w-full sm:w-auto flex justify-end">
                   <img 
@@ -81,7 +81,7 @@ export default function CV() {
                 Objective
               </h3>
               <p className="text-muted-foreground leading-relaxed pl-10">
-                Master of Mechanical Engineering student with a keen interest in the energy industry. Strong technical foundations in CAD, simulation, programming, and data analysis. 
+                MAI (MEng) Master of Mechanical and Manufacturing Engineering student with a keen interest in the energy industry. Strong technical foundations in CAD, simulation, programming, and data analysis. 
                 Seeking opportunities to apply engineering expertise and analytical skills in energy trading, engineering design, and data-driven problem-solving.
               </p>
             </div>
@@ -98,7 +98,7 @@ export default function CV() {
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
                     <h4 className="font-semibold text-foreground">
-                      Master of Engineering - MAI (MEng), Mechanical & Manufacturing Engineering
+                      MAI (MEng) Master of Mechanical and Manufacturing Engineering
                     </h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
