@@ -35,7 +35,7 @@ export default function CV() {
             {/* Header / Contact */}
             <div className="bg-card rounded-lg p-8 border border-border mb-8">
               <h2 className="font-serif text-3xl font-bold text-primary mb-2">Finn O'Connor</h2>
-              <p className="text-lg text-accent mb-6">MAI (MEng) Mechanical & Manufacturing Engineering</p>
+              <p className="text-lg text-accent mb-6">M.Eng, MAI (Hons) Master of Mechanical Engineering</p>
               
               <div className="grid sm:grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2 text-muted-foreground">
@@ -70,9 +70,8 @@ export default function CV() {
                 Objective
               </h3>
               <p className="text-muted-foreground leading-relaxed pl-10">
-                Master of Mechanical Engineering student with strong technical foundations in CAD, simulation, and programming. 
-                Seeking opportunities to apply engineering expertise in mechanical design, analysis, and manufacturing optimization. 
-                Demonstrated experience in aerospace design, thermal systems, and interdisciplinary engineering problem-solving.
+                Master of Mechanical Engineering student with a passion for the energy industry. Strong technical foundations in CAD, simulation, programming, and data analysis. 
+                Seeking opportunities to apply engineering expertise and analytical skills in energy trading, engineering design, and data-driven problem-solving.
               </p>
             </div>
 
@@ -97,7 +96,7 @@ export default function CV() {
                   </div>
                   <p className="text-accent text-sm mb-2">Trinity College Dublin, The University of Dublin</p>
                   <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
-                    <li>Relevant Coursework: Engineering Mathematics, Probability & Statistics, Computational Science, Materials Science, Fluid Mechanics, Thermodynamics, Heat Transfer, Signals and Systems, Multibody Dynamics, Mechanics of Solids, Research Methods</li>
+                    <li>Relevant Coursework: Engineering Mathematics 1–5, Probability & Statistics, Computational Science, Thermodynamics, Heat Transfer, Fluid Mechanics 1 & 2, Mechanics of Solids, Mechanical Materials, Multibody Dynamics, Mechanics of Machines, Signals and Systems, Computer Engineering, Electronics, Computer Aided Design, Universal Design Innovation, Research Methods, Management for Engineers</li>
                     <li>Activities: Trinity Student Managed Fund, Formula Trinity, DUFC (Trinity Rugby), EngSoc</li>
                   </ul>
                 </div>
@@ -113,6 +112,36 @@ export default function CV() {
                 Experience
               </h3>
               <div className="pl-10 space-y-6">
+                <div>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                    <h4 className="font-semibold text-foreground">Energy Trading Intern</h4>
+                    <span className="text-sm text-muted-foreground flex items-center gap-1">
+                      <Calendar size={14} />
+                      Jan 2026 – Present
+                    </span>
+                  </div>
+                  <p className="text-accent text-sm mb-2">ElectroRoute — Dublin, Ireland</p>
+                  <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                    <li>Currently on industrial placement with ElectroRoute, an independent energy trading company</li>
+                    <li>Developing skills in Python and data analysis while learning about energy markets and trading</li>
+                  </ul>
+                </div>
+
+                <div>
+                  <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
+                    <h4 className="font-semibold text-foreground">Intern</h4>
+                    <span className="text-sm text-muted-foreground flex items-center gap-1">
+                      <Calendar size={14} />
+                      Jan 2026 – Present
+                    </span>
+                  </div>
+                  <p className="text-accent text-sm mb-2">HappyStack — Dublin, Ireland</p>
+                  <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                    <li>HappyStack is a startup helping e-commerce brands grow through software, data analytics, and marketing</li>
+                    <li>Gaining exposure to the e-commerce industry while developing skills in tech stacks and data analysis</li>
+                  </ul>
+                </div>
+
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
                     <h4 className="font-semibold text-foreground">Mechanical Engineering Intern</h4>
@@ -134,7 +163,7 @@ export default function CV() {
                     <h4 className="font-semibold text-foreground">Drivetrain Engineer</h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
-                      Oct 2024 – Present
+                      Oct 2024 – Sep 2025
                     </span>
                   </div>
                   <p className="text-accent text-sm mb-2">Formula Trinity — Dublin, Ireland</p>
@@ -145,10 +174,10 @@ export default function CV() {
 
                 <div>
                   <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-1 mb-1">
-                    <h4 className="font-semibold text-foreground">Quantitative Trader & Analyst</h4>
+                    <h4 className="font-semibold text-foreground">Quantitative Trader, Macroeconomic Analyst, Basic Materials Analyst</h4>
                     <span className="text-sm text-muted-foreground flex items-center gap-1">
                       <Calendar size={14} />
-                      Feb 2023 – Present
+                      Feb 2023 – Apr 2025
                     </span>
                   </div>
                   <p className="text-accent text-sm mb-2">Trinity Student Managed Fund — Dublin, Ireland</p>
@@ -209,13 +238,13 @@ export default function CV() {
                 <div>
                   <h4 className="font-medium text-foreground mb-2 text-sm">Core Competencies</h4>
                   <p className="text-sm text-muted-foreground">
-                    CAD, CFD, FEA, Data Analysis, Advanced Mathematics, Teamwork, Communication
+                    CAD, CFD, FEA, Programming, Data Analysis, Advanced Mathematics, Teamwork, Communication, Spanish
                   </p>
                 </div>
                 <div>
                   <h4 className="font-medium text-foreground mb-2 text-sm">Certifications</h4>
                   <p className="text-sm text-muted-foreground">
-                    Certified SolidWorks Associate, Bloomberg Market Concepts, MATLAB Onramp
+                    Python & Machine Learning for Financial Analysis, MATLAB Onramp, Bloomberg Market Concepts, Certified SolidWorks Associate, European Computer Driving Licence
                   </p>
                 </div>
               </div>
@@ -242,7 +271,13 @@ export default function CV() {
                     <p className="text-sm text-muted-foreground mb-2"><span className="text-foreground font-medium">Research & Analysis:</span> Acoustic Liners for UAM Applications, Thermal Systems Analysis, Multibody Dynamics, Materials Selection</p>
                   </div>
                   <div>
-                    <p className="text-sm text-muted-foreground"><span className="text-foreground font-medium">Achievements & Leadership:</span> Castleknock College Deputy School Captain (2022), Valedictory Speech (2022), Bologna Marathon Finisher (2025), Trinity Rugby DUFC First XV, RIAM Grade 6 Pianist</p>
+                    <p className="text-sm text-muted-foreground mb-2"><span className="text-foreground font-medium">Achievements & Leadership:</span> Castleknock College Deputy School Captain (2022), Valedictory Speech (2022), Bologna Marathon Finisher (2025), Trinity Rugby DUFC First XV, RIAM Grade 6 Pianist</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground"><span className="text-foreground font-medium">Part-time Work:</span> Mathematics tutor, bartender in USA and France, stadium steward, construction labourer</p>
+                  </div>
+                  <div>
+                    <p className="text-sm text-muted-foreground"><span className="text-foreground font-medium">Interests:</span> Running, rugby, golf, piano, saxophone, acrylic painting, Formula 1, geopolitics, energy economics</p>
                   </div>
                 </div>
               </div>
