@@ -136,14 +136,22 @@ export function ProjectCard({ project }: ProjectCardProps) {
                 
                 {/* PDF Viewer for this specific document */}
                 {expandedPdfIndex === index && (
-                  <div className="mt-3 sm:mt-4 border-t border-border pt-3 sm:pt-4 animate-accordion-down">
-                    <div className="w-full h-[500px] sm:h-[600px] md:h-[800px] bg-background rounded border border-border overflow-auto">
-                      <iframe
-                        src={pdf.url}
-                        className="w-full h-full"
-                        title={`${project.title} - ${pdf.label}`}
-                        style={{ border: 'none' }}
-                      />
+                  <div className="mt-3 sm:mt-4 border-t border-border pt-3 sm:pt-4 animate-accordion-down -mx-4 sm:-mx-6 px-4 sm:px-6">
+                    <div className="w-full bg-background rounded border border-border overflow-hidden">
+                      <div className="w-full h-[400px] sm:h-[600px] md:h-[800px]" style={{ position: 'relative' }}>
+                        <iframe
+                          src={pdf.url}
+                          title={`${project.title} - ${pdf.label}`}
+                          style={{ 
+                            border: 'none',
+                            position: 'absolute',
+                            width: '100%',
+                            height: '100%',
+                            top: 0,
+                            left: 0
+                          }}
+                        />
+                      </div>
                     </div>
                     <p className="text-xs text-muted-foreground mt-2 text-center">
                       Having trouble viewing? <a href={pdf.url} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Open in new tab</a>
@@ -204,13 +212,21 @@ export function ProjectCard({ project }: ProjectCardProps) {
       {isExpanded && project.pdfUrl && (
         <div className="border-t border-border animate-accordion-down">
           <div className="p-3 sm:p-4 bg-muted/30">
-            <div className="w-full h-[500px] sm:h-[600px] md:h-[800px] bg-background rounded border border-border overflow-auto">
-              <iframe
-                src={project.pdfUrl}
-                className="w-full h-full"
-                title={`${project.title} - PDF Report`}
-                style={{ border: 'none' }}
-              />
+            <div className="w-full bg-background rounded border border-border overflow-hidden">
+              <div className="w-full h-[400px] sm:h-[600px] md:h-[800px]" style={{ position: 'relative' }}>
+                <iframe
+                  src={project.pdfUrl}
+                  title={`${project.title} - PDF Report`}
+                  style={{ 
+                    border: 'none',
+                    position: 'absolute',
+                    width: '100%',
+                    height: '100%',
+                    top: 0,
+                    left: 0
+                  }}
+                />
+              </div>
             </div>
             <p className="text-xs text-muted-foreground mt-2 text-center">
               Having trouble viewing? <a href={project.pdfUrl} target="_blank" rel="noopener noreferrer" className="text-accent hover:underline">Open in new tab</a>

@@ -35,15 +35,17 @@ export default function CV() {
             {/* Header / Contact */}
             <div className="bg-card rounded-lg p-4 sm:p-6 md:p-8 border border-border mb-8">
               <div className="flex flex-col sm:flex-row sm:justify-between sm:items-start gap-4 sm:gap-6 mb-4">
-                <div className="flex-1">
+                <div className="flex-1 min-w-0">
                   <h2 className="font-serif text-2xl sm:text-3xl font-bold text-primary mb-1 sm:mb-2">Finn O'Connor</h2>
                   <p className="text-base sm:text-lg text-accent mb-4 sm:mb-6">M.Eng, MAI (Hons) Master of Mechanical Engineering</p>
                 </div>
-                <img 
-                  src="/finnoconnor_portfolio/Trinity-Main-Logo.jpg" 
-                  alt="Trinity College Dublin Logo" 
-                  className="h-16 sm:h-20 md:h-24 shrink-0 w-auto"
-                />
+                <div className="w-full sm:w-auto flex justify-end">
+                  <img 
+                    src="/finnoconnor_portfolio/Trinity-Main-Logo.jpg" 
+                    alt="Trinity College Dublin Logo" 
+                    className="h-16 sm:h-20 md:h-24 w-auto object-contain"
+                  />
+                </div>
               </div>
               
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 sm:gap-4 text-xs sm:text-sm">
