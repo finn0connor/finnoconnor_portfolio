@@ -179,7 +179,7 @@ export const projects: Project[] = [
     id: "15",
     title: "ESC x DUCG Case Competition: Emerald Energy - Blackridge Windfarm Acquisition Analysis",
     disciplines: ["Engineering Analysis"],
-    tags: ["Business Strategy", "Renewable Energy", "Energy", "Financial Analysis", "Case Study", "Consulting", "Wind Energy", "Presentation"],
+    tags: ["Energy", "Business Strategy", "Renewable Energy", "Financial Analysis", "Case Study", "Consulting", "Wind Energy", "Presentation"],
     description: "Participated in a competitive case study competition run by the Dublin University Consulting Group (DUCG) in collaboration with ESB. Tasked with advising Emerald Energy on whether to acquire Blackridge Windfarm, conducting comprehensive analysis of financial viability, strategic fit, and operational considerations.",
     outcome: "Our team was selected to present at ESB head office and placed 2nd out of 28 teams and over 100 contestants. The analysis demonstrated strong analytical skills, strategic thinking, and effective communication of complex energy sector recommendations.",
     pdfUrl: "/finnoconnor_portfolio/projects/DUCG Final Presentation_vF.pdf",
