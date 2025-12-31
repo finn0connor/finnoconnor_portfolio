@@ -34,8 +34,17 @@ export default function CV() {
           <div className="max-w-4xl mx-auto">
             {/* Header / Contact */}
             <div className="bg-card rounded-lg p-8 border border-border mb-8">
-              <h2 className="font-serif text-3xl font-bold text-primary mb-2">Finn O'Connor</h2>
-              <p className="text-lg text-accent mb-6">M.Eng, MAI (Hons) Master of Mechanical Engineering</p>
+              <div className="flex justify-between items-start gap-6 mb-4">
+                <div className="flex-1">
+                  <h2 className="font-serif text-3xl font-bold text-primary mb-2">Finn O'Connor</h2>
+                  <p className="text-lg text-accent mb-6">M.Eng, MAI (Hons) Master of Mechanical Engineering</p>
+                </div>
+                <img 
+                  src="/finnoconnor_portfolio/Trinity-Main-Logo.jpg" 
+                  alt="Trinity College Dublin Logo" 
+                  className="h-24 shrink-0"
+                />
+              </div>
               
               <div className="grid sm:grid-cols-2 gap-4 text-sm">
                 <div className="flex items-center gap-2 text-muted-foreground">
