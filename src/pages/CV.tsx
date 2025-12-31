@@ -210,35 +210,23 @@ export default function CV() {
                 </span>
                 Technical Skills & Platforms
               </h3>
-              <div className="pl-10 grid sm:grid-cols-2 gap-6">
+              <div className="pl-10 grid sm:grid-cols-3 gap-6">
                 <div>
-                  <h4 className="font-medium text-foreground mb-2 text-sm">CAD & Design</h4>
+                  <h4 className="font-medium text-foreground mb-2 text-sm">Mechanical Design and Simulation</h4>
                   <p className="text-sm text-muted-foreground">
-                    SolidWorks, AutoCAD, Revit, BlueBeam
+                    SolidWorks, ANSYS, FEA, CFD
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground mb-2 text-sm">Simulation & Analysis</h4>
+                  <h4 className="font-medium text-foreground mb-2 text-sm">Programming and Data Analysis</h4>
                   <p className="text-sm text-muted-foreground">
-                    ANSYS, CFD, FEA, MATLAB, MADYMO
+                    MATLAB, Python, C++, Arduino, Excel
                   </p>
                 </div>
                 <div>
-                  <h4 className="font-medium text-foreground mb-2 text-sm">Programming & Data</h4>
+                  <h4 className="font-medium text-foreground mb-2 text-sm">Engineering Fundamentals</h4>
                   <p className="text-sm text-muted-foreground">
-                    Python, C++, MATLAB, Excel, Arduino
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-foreground mb-2 text-sm">Manufacturing</h4>
-                  <p className="text-sm text-muted-foreground">
-                    CNC, 3D Printing, GD&T, BlueBeam
-                  </p>
-                </div>
-                <div>
-                  <h4 className="font-medium text-foreground mb-2 text-sm">Core Competencies</h4>
-                  <p className="text-sm text-muted-foreground">
-                    CAD, CFD, FEA, Programming, Data Analysis, Advanced Mathematics, Teamwork, Communication, Spanish
+                    Applied Mathematics, Probability & Statistics, Numerical Methods, Thermodynamics, Heat Transfer, Fluid Mechanics, Classical Mechanics
                   </p>
                 </div>
                 <div>

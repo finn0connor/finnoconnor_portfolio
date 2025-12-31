@@ -119,42 +119,42 @@ export default function Home() {
           </h2>
 
           <div className="grid md:grid-cols-3 gap-8">
-            {/* CAD & Design */}
+            {/* Mechanical Design and Simulation */}
             <div className="bg-card rounded-lg p-6 border border-border">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 5a1 1 0 011-1h14a1 1 0 011 1v2a1 1 0 01-1 1H5a1 1 0 01-1-1V5zM4 13a1 1 0 011-1h6a1 1 0 011 1v6a1 1 0 01-1 1H5a1 1 0 01-1-1v-6zM16 13a1 1 0 011-1h2a1 1 0 011 1v6a1 1 0 01-1 1h-2a1 1 0 01-1-1v-6z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-3">CAD & Design</h3>
+              <h3 className="font-serif text-xl font-semibold mb-3">Mechanical Design and Simulation</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                SolidWorks, AutoCAD, Revit. Experienced in DFM, GD&T, and creating production-ready designs.
+                SolidWorks, ANSYS, FEA, CFD
               </p>
             </div>
 
-            {/* Programming */}
+            {/* Programming and Data Analysis */}
             <div className="bg-card rounded-lg p-6 border border-border">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-3">Programming & Data Analysis</h3>
+              <h3 className="font-serif text-xl font-semibold mb-3">Programming and Data Analysis</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Python, C++, MATLAB, Excel, Arduino. Building tools for automation, optimization, and quantitative analysis.
+                MATLAB, Python, C++, Arduino, Excel
               </p>
             </div>
 
-            {/* Engineering Analysis */}
+            {/* Engineering Fundamentals */}
             <div className="bg-card rounded-lg p-6 border border-border">
               <div className="w-12 h-12 bg-accent/10 rounded-lg flex items-center justify-center mb-4">
                 <svg className="w-6 h-6 text-accent" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
                 </svg>
               </div>
-              <h3 className="font-serif text-xl font-semibold mb-3">Engineering Analysis & Simulation</h3>
+              <h3 className="font-serif text-xl font-semibold mb-3">Engineering Fundamentals</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                ANSYS, CFD, FEA, MATLAB. Simulation-driven design optimization and performance analysis.
+                Applied Mathematics, Probability & Statistics, Numerical Methods, Thermodynamics, Heat Transfer, Fluid Mechanics, Classical Mechanics, Multibody Dynamics
               </p>
             </div>
           </div>
