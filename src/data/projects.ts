@@ -145,6 +145,26 @@ export const projects: Project[] = [
     outcome: "Presented comprehensive insights into energy systems management, sustainable practices, and the intersection of engineering innovation with environmental responsibility.",
     videoUrl: "https://www.youtube.com/watch?v=YMPw99gwM_k",
   },
+  {
+    id: "13",
+    title: "Universal Design Innovation: Inclusive Product Development",
+    discipline: "CAD & Design",
+    tags: ["Universal Design", "Human-Centred Design", "Concept Development", "Prototyping", "Presentation"],
+    description: "Developed an inclusive product concept following Universal Design principles, focusing on accessibility, user research, and iterative prototyping. Communicated the solution through both a poster and a slide deck summarising research insights, design rationale, and proposed features.",
+    outcome: "Produced a comprehensive design package combining research, concept visuals, and user-centric justification. Presented the work via a final poster and slide deck to clearly convey the design's value and accessibility impact.",
+    pdfs: [
+      {
+        label: "Final Poster",
+        url: "/finnoconnor_portfolio/projects/Universal Design Innovation - Final Poster.pdf",
+        description: "One-page poster summarising the inclusive design concept, core features, and accessibility benefits."
+      },
+      {
+        label: "Slide Deck",
+        url: "/finnoconnor_portfolio/projects/Universal Design Innovation - Slide Deck.pdf",
+        description: "Presentation slides detailing research insights, design process, user needs, and proposed solution."
+      }
+    ],
+  },
 ];
 
 export const disciplines: Discipline[] = ["CAD & Design", "Programming & Software", "Engineering Analysis"];

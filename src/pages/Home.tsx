@@ -17,7 +17,7 @@ export default function Home() {
             </p>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
               This website serves as a comprehensive portfolio and extension to my CV, showcasing my engineering projects, technical skills, and professional experience. 
-              I am a MAI (MEng) Master of Mechanical and Manufacturing Engineering student at Trinity College Dublin, The University of Dublin with interests in engineering, energy markets, and technology. 
+              I am a Mechanical and Manufacturing Engineering student at Trinity College Dublin, The University of Dublin with interests in engineering, energy markets, and technology. 
               Browse my projects to see examples of my work in CAD design, programming, simulation, and data analysis.
             </p>
             
@@ -76,7 +76,7 @@ export default function Home() {
               </div>
               <h3 className="font-serif text-xl font-semibold mb-3">Energy and Commodity Trading</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">
-                Leveraging my background in energy markets, data analysis, and quantitative methods to optimise trading strategies, 
+                Leveraging my background in energy markets, data analysis, and quantitative analysis to optimise trading strategies, 
                 analyse market dynamics, and develop models for energy and commodity markets.
               </p>
             </div>
