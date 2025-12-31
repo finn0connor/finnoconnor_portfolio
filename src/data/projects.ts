@@ -3,7 +3,8 @@ export type Discipline = "CAD & Design" | "Programming & Software" | "Engineerin
 export interface Project {
   id: string;
   title: string;
-  discipline: Discipline;
+  discipline?: Discipline; // legacy single-discipline support
+  disciplines?: Discipline[]; // preferred: one or more disciplines per project
   tags: string[];
   description: string;
   outcome: string;
@@ -148,7 +149,7 @@ export const projects: Project[] = [
   {
     id: "13",
     title: "Universal Design Innovation: Inclusive Product Development",
-    discipline: "CAD & Design",
+    disciplines: ["CAD & Design", "Programming & Software"],
     tags: ["Universal Design", "Human-Centred Design", "Concept Development", "Prototyping", "Presentation"],
     description: "Developed an inclusive product concept following Universal Design principles, focusing on accessibility, user research, and iterative prototyping. Communicated the solution through both a poster and a slide deck summarising research insights, design rationale, and proposed features.",
     outcome: "Produced a comprehensive design package combining research, concept visuals, and user-centric justification. Presented the work via a final poster and slide deck to clearly convey the design's value and accessibility impact.",
@@ -164,6 +165,15 @@ export const projects: Project[] = [
         description: "Presentation slides detailing research insights, design process, user needs, and proposed solution."
       }
     ],
+  },
+  {
+    id: "14",
+    title: "Campus Sound Intensity Distribution Analysis",
+    disciplines: ["Engineering Analysis", "Programming & Software"],
+    tags: ["MATLAB", "Data Analysis", "Acoustics", "Statistical Modelling", "Probability Distributions"],
+    description: "Analysed sound intensity measurements taken at three locations across Trinity's campus, using MATLAB to explore distributional fits and campus noise characteristics.",
+    outcome: "Compared lognormal, Weibull, and exponential models against observed sound intensity data to determine the best-fitting distribution and quantify noise behaviour at each site.",
+    pdfUrl: "/finnoconnor_portfolio/projects/3E3_Group29_Assignment2.pdf",
   },
 ];
 

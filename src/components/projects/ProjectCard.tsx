@@ -11,6 +11,7 @@ export function ProjectCard({ project }: ProjectCardProps) {
   const [isExpanded, setIsExpanded] = useState(false);
   const [expandedPdfIndex, setExpandedPdfIndex] = useState<number | null>(null);
   const [showVideo, setShowVideo] = useState(false);
+  const disciplines = project.disciplines ?? (project.discipline ? [project.discipline] : []);
 
   // Extract YouTube video ID from URL
   const getYoutubeEmbedUrl = (url: string) => {
@@ -27,9 +28,13 @@ export function ProjectCard({ project }: ProjectCardProps) {
           <h3 className="font-serif text-lg sm:text-xl font-semibold text-primary leading-tight">
             {project.title}
           </h3>
-          <span className="tag-accent shrink-0 text-xs w-fit">
-            {project.discipline}
-          </span>
+          <div className="flex flex-wrap gap-2 justify-end">
+            {disciplines.map((disc) => (
+              <span key={disc} className="tag-accent shrink-0 text-xs w-fit">
+                {disc}
+              </span>
+            ))}
+          </div>
         </div>
 
         {/* Tags */}

@@ -2,16 +2,20 @@ import { useState, useMemo } from "react";
 import { Layout } from "@/components/layout/Layout";
 import { ProjectCard } from "@/components/projects/ProjectCard";
 import { ProjectFilter } from "@/components/projects/ProjectFilter";
-import { projects, Discipline } from "@/data/projects";
+import { projects, Discipline, Project } from "@/data/projects";
 
 export default function Projects() {
   const [selectedDiscipline, setSelectedDiscipline] = useState<Discipline | "All">("All");
   const [searchQuery, setSearchQuery] = useState("");
 
+  const getProjectDisciplines = (project: Project) => project.disciplines ?? (project.discipline ? [project.discipline] : []);
+
   const filteredProjects = useMemo(() => {
     return projects.filter((project) => {
-      // Filter by discipline
-      if (selectedDiscipline !== "All" && project.discipline !== selectedDiscipline) {
+      const projectDisciplines = getProjectDisciplines(project);
+
+      // Filter by discipline (supports multi-discipline projects)
+      if (selectedDiscipline !== "All" && !projectDisciplines.includes(selectedDiscipline)) {
         return false;
       }
 
@@ -36,9 +40,9 @@ export default function Projects() {
     return {
       all: projects.length,
       byDiscipline: {
-        "CAD & Design": projects.filter((p) => p.discipline === "CAD & Design").length,
-        "Programming & Software": projects.filter((p) => p.discipline === "Programming & Software").length,
-        "Engineering Analysis": projects.filter((p) => p.discipline === "Engineering Analysis").length,
+        "CAD & Design": projects.filter((p) => getProjectDisciplines(p).includes("CAD & Design")).length,
+        "Programming & Software": projects.filter((p) => getProjectDisciplines(p).includes("Programming & Software")).length,
+        "Engineering Analysis": projects.filter((p) => getProjectDisciplines(p).includes("Engineering Analysis")).length,
       },
     };
   }, []);
