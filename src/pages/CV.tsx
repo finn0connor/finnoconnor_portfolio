@@ -289,7 +289,7 @@ export default function CV() {
                 <h3 className="font-semibold text-foreground">View Full CV</h3>
               </div>
               <iframe
-                src="/finnoconnor_portfolio/cv/finnoconnor_resume.pdf#toolbar=1&view=FitH"
+                src="/finnoconnor_portfolio/cv/finnoconnor_resume.pdf?v=2#toolbar=1&view=FitH"
                 className="w-full h-screen md:h-[800px]"
                 title="Finn O'Connor CV"
               />
@@ -301,7 +301,7 @@ export default function CV() {
                 Download the complete CV as a PDF for your records.
               </p>
               <a
-                href="/finnoconnor_portfolio/cv/finnoconnor_resume.pdf"
+                href="/finnoconnor_portfolio/cv/finnoconnor_resume.pdf?v=2"
                 download
                 className="btn-primary inline-flex items-center gap-2"
               >
